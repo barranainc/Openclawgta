@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw Security Hardening | GTA & Canada — OpenClawGTA</title>
+<meta name="description" content="Professional OpenClaw security hardening: Docker, firewall, OAuth middleware, audit logs. New or existing installs. GTA & remote Canada.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Vaughan, Ontario, Canada">
+<meta name="geo.position" content="43.8361;-79.4983">
+<meta name="ICBM" content="43.8361, -79.4983">
+<link rel="canonical" href="https://openclawgta.com/openclaw-security-hardening/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OpenClawGTA">
+<meta property="og:title" content="OpenClaw Security Hardening | GTA & Canada — OpenClawGTA">
+<meta property="og:description" content="Professional OpenClaw security hardening: Docker, firewall, OAuth middleware, audit logs. New or existing installs. GTA & remote Canada.">
+<meta property="og:url" content="https://openclawgta.com/openclaw-security-hardening/">
+<meta property="og:image" content="https://openclawgta.com/og-image.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw Security Hardening | GTA & Canada — OpenClawGTA">
+<meta name="twitter:description" content="Professional OpenClaw security hardening: Docker, firewall, OAuth middleware, audit logs. New or existing installs. GTA & remote Canada.">
+<meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c8f04a'/><text x='16' y='23' text-anchor='middle' font-size='20' font-family='monospace' font-weight='bold' fill='%23000'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"OpenClaw Security Hardening Service",
+"description":"Professional OpenClaw security hardening: Docker sandboxing, firewall configuration, exec allowlists, Composio OAuth middleware, audit logging, and credential rotation. GTA and remote worldwide.",
+"provider":{"@type":"LocalBusiness","name":"OpenClawGTA","url":"https://openclawgta.com","telephone":"+16473676771"}}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://openclawgta.com/"},
+{"@type":"ListItem","position":2,"name":"OpenClaw Security Hardening","item":"https://openclawgta.com/openclaw-security-hardening/"}
+]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What does OpenClaw security hardening include?","acceptedAnswer":{"@type":"Answer","text":"Docker sandboxing, exec allowlists, firewall rules, Composio OAuth middleware, read-only permissions by default, audit logging, update cadence documentation, and post-delivery credential rotation."}},
+{"@type":"Question","name":"Can you audit an existing OpenClaw installation?","acceptedAnswer":{"@type":"Answer","text":"Yes. We audit existing installs for security gaps — exposed gateway ports, missing sandboxing, raw credentials in config files — and bring them up to production standard."}},
+{"@type":"Question","name":"Why is security hardening so important for OpenClaw?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw has system-level access to email, calendar, and files. 30,000+ instances were publicly exposed due to misconfiguration. Proper hardening prevents data exposure, credential theft, and unauthorized access."}}
+]}</script>
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="OpenClawGTA Home">
+    <div class="nav-logo-mark" aria-hidden="true">C</div>
+    OpenClawGTA
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#personal">Personal</a></li>
+    <li><a href="/#services">Business</a></li>
+    <li><a href="/#pricing">Pricing</a></li>
+    <li><a href="/#security">Security</a></li>
+    <li><a href="/#process">Process</a></li>
+    <li><a href="/#contact" class="nav-cta">Book a Call →</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="/#personal">Personal Setup — $499</a>
+  <a href="/#services">Business Deployment</a>
+  <a href="/#pricing">Pricing</a>
+  <a href="/#security">Security</a>
+  <a href="/#process">Process</a>
+  <a href="/#contact">Book a Free Call →</a>
+</div>
+<main>
+<article>
+<section style="position:relative;padding:100px 0 72px;overflow:hidden;">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> / <span>OpenClaw Security Hardening</span></nav>
+    <div class="section-label" style="margin-top:24px;">Security</div>
+    <h1>OpenClaw Security Hardening.<br><em style="font-style:italic;color:#c8f04a;">The layer most installs skip.</em></h1>
+    <p style="max-width:560px;font-size:18px;margin-top:20px;">OpenClaw has system-level access to your email, calendar, and files. That's its power — and its risk. We harden every deployment from day one. 30,000+ instances were publicly exposed due to skipped hardening.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px;">
+      <a href="../contact/" class="btn-primary">Get a Hardened Setup →</a>
+      <a href="../security/" class="btn-outline">Full Security Details</a>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+<section>
+  <div class="container">
+    <div class="section-label">9-point hardening checklist</div>
+    <h2 style="margin-bottom:32px;">Every deployment we deliver<br>completes this checklist.</h2>
+    <div class="checklist">
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Docker sandboxing configured</h4><p>Containerized environment with resource limits, network restrictions, and filesystem isolation.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Exec allowlist enforced</h4><p>Explicit list of permitted system commands. The agent cannot execute arbitrary code outside the approved list.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Firewall rules configured</h4><p>Inbound and outbound rules matching the agent's actual access requirements — nothing more.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Read-only permissions as default</h4><p>Minimum viable permissions to start. Permissions expand gradually as trust is established.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Composio OAuth middleware</h4><p>All integrations run through OAuth middleware. The agent never sees your raw credentials.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Audit logging enabled</h4><p>Full audit trail of all agent activity — what it accessed, what actions it took, when.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Update cadence established</h4><p>Documented process for maintaining security through OpenClaw's monthly releases.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Credential rotation completed</h4><p>All setup credentials rotated after delivery. Our access window is closed before handover.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Safe operating procedures documented</h4><p>Runbook includes security procedures — how to revoke integrations, how to update safely.</p></div></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+<section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:72px 0;">
+  <div class="container">
+    <div class="section-label">Already installed?</div>
+    <h2 style="margin-bottom:16px;">We audit existing installs<br>and fix what's missing.</h2>
+    <p style="max-width:560px;font-size:17px;margin-bottom:32px;">Many clients come with a working OpenClaw install that has security gaps — exposed gateway ports, no sandboxing, raw credentials in config files. We audit, harden, and migrate you to a secure configuration.</p>
+    <a href="../contact/" class="btn-primary">Book a Security Audit →</a>
+  </div>
+</section>
+<div class="divider"></div>
+<section>
+  <div class="container-sm">
+    <div class="section-label">FAQ</div>
+    <h2 style="margin-bottom:36px;">Security questions.</h2>
+    <div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What does OpenClaw security hardening include?<div class="faq-icon">+</div></button><div class="faq-answer">Docker sandboxing, exec allowlists, firewall rules, Composio OAuth middleware, read-only permissions by default, audit logging, update cadence documentation, and post-delivery credential rotation. 9 steps, all completed before handover.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can you audit an existing OpenClaw installation?<div class="faq-icon">+</div></button><div class="faq-answer">Yes. We audit existing installs for gaps — exposed gateway ports, missing sandboxing, raw credentials in config files — and bring them up to production standard. Same pricing as a fresh deployment.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Why is security hardening critical for OpenClaw?<div class="faq-icon">+</div></button><div class="faq-answer">OpenClaw has system-level access to email, calendar, and files. 30,000+ instances were publicly exposed due to misconfiguration. CVE-2026-25253 (CVSS 8.8) allowed RCE via exposed gateway. Hardening is not optional.</div></div>
+    </div>
+    <div style="text-align:center;margin-top:40px;"><a href="../contact/" class="btn-primary">Book a Hardened Deployment →</a></div>
+  </div>
+</section>
+<div class="cta-band"><div class="container" style="position:relative;z-index:1;">
+  <h2>Don't skip the hardening.</h2>
+  <p style="max-width:440px;margin:12px auto 28px;font-size:17px;">30,000+ exposed instances. Don't be one of them. Every OpenClawGTA deployment is hardened before handover.</p>
+  <a href="../contact/" class="btn-primary">Book a Hardened Deployment →</a>
+</div></div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="../" class="nav-logo" style="display:inline-flex;margin-bottom:12px;">
+          <div class="nav-logo-mark" aria-hidden="true">C</div>
+          <span>OpenClawGTA</span>
+        </a>
+        <p style="font-size:14px;max-width:280px;margin-bottom:12px;">OpenClaw installation, security hardening, and support for GTA businesses. Based in Vaughan, Ontario.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://linkedin.com/company/openclawgta" target="_blank" rel="noopener" style="color:var(--text-dim);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;">LinkedIn →</a>
+          <a href="https://barrana.ai" target="_blank" rel="noopener" style="color:var(--text-dim);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;">Barrana.ai →</a>
+          <a href="tel:+16473676771" style="color:var(--text-dim);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;">+1 (647) 367-6771</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/#personal">Personal Setup — $499</a></li>
+          <li><a href="/#personal">Mac Mini Bundle — $6,500</a></li>
+          <li><a href="/#services">Business Deployment</a></li>
+          <li><a href="/#security">Security Hardening</a></li>
+          <li><a href="/#services">Managed Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul>
+          <li><a href="../openclaw-setup-vaughan/">Vaughan, ON</a></li>
+          <li><a href="../openclaw-setup-toronto/">Toronto, ON</a></li>
+          <li><a href="../openclaw-setup-mississauga/">Mississauga, ON</a></li>
+          <li><a href="../openclaw-setup-brampton/">Brampton, ON</a></li>
+          <li><a href="../openclaw-setup-markham/">Markham, ON</a></li>
+          <li><a href="../openclaw-setup-gta/">GTA Region</a></li>
+          <li><a href="../openclaw-installation-canada/">Canada-wide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OpenClawGTA / Barrana.ai — Vaughan, Ontario, Canada</span>
+      <div style="display:flex;gap:20px;">
+        <a href="/#privacy" style="color:var(--text-dim);text-decoration:none;">Privacy</a>
+        <a href="/#terms" style="color:var(--text-dim);text-decoration:none;">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../shared.js"></script>
+</body>
+</html>

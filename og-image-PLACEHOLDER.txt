@@ -1,0 +1,7 @@
+CREATE THIS FILE BEFORE LAUNCH:
+- Filename: og-image.jpg
+- Size: 1200 x 630 pixels
+- Design: Dark background (#0a0a0f), accent green text
+- Text: "OpenClaw Setup Service GTA" + "openclawgta.com"
+- Tool: Canva (free) → Custom size 1200x630 → Export as JPG
+- Upload to: /og-image.jpg (root of your domain)

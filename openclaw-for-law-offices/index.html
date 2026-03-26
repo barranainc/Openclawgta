@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw for Law Offices | Secure Setup — OpenClawGTA</title>
+<meta name="description" content="OpenClaw setup for law offices. Secure, PIPEDA-aligned. Automate scheduling, intake, email triage.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Vaughan, Ontario, Canada">
+<link rel="canonical" href="https://openclawgta.com/openclaw-for-law-offices/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OpenClawGTA">
+<meta property="og:title" content="OpenClaw for Law Offices | Secure Setup — OpenClawGTA">
+<meta property="og:description" content="OpenClaw setup for law offices. Secure, PIPEDA-aligned. Automate scheduling, intake, email triage.">
+<meta property="og:url" content="https://openclawgta.com/openclaw-for-law-offices/">
+<meta property="og:image" content="https://openclawgta.com/og-image.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw for Law Offices | Secure Setup — OpenClawGTA">
+<meta name="twitter:description" content="OpenClaw setup for law offices. Secure, PIPEDA-aligned. Automate scheduling, intake, email triage.">
+<meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c8f04a'/><text x='16' y='23' text-anchor='middle' font-size='20' font-family='monospace' font-weight='bold' fill='%23000'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://openclawgta.com/"},
+  {"@type":"ListItem","position":2,"name":"OpenClaw for Law Offices","item":"https://openclawgta.com/openclaw-for-law-offices/"}
+]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service",
+  "name":"OpenClaw for Law Offices",
+  "description":"OpenClaw setup for law offices. Secure, PIPEDA-aligned automation for intake triage, scheduling, email management, and document organization. Docker sandboxed. No data leaves your infrastructure.",
+  "provider":{"@type":"LocalBusiness","name":"OpenClawGTA","url":"https://openclawgta.com","telephone":"+16473676771"},
+  "areaServed":{"@type":"Country","name":"Canada"},
+  "offers":[
+    {"@type":"Offer","name":"Personal Setup","price":"499","priceCurrency":"CAD"},
+    {"@type":"Offer","name":"Business Deployment","price":"2500","priceCurrency":"CAD"}
+  ]
+}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is OpenClaw safe for privileged communications?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw runs entirely on your own infrastructure. No data is sent to third-party servers. The system uses Docker sandboxing to isolate the agent, encrypted credential storage, firewall rules, and audit logging. It is designed with solicitor-client privilege in mind — your communications stay on your machine."}},{"@type":"Question","name":"What tasks can it handle for a law office?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw can triage incoming inquiries, schedule client consultations, manage email (sort, summarize, draft responses), organize documents into case folders, send deadline reminders, and generate morning briefings with your day's priorities. It handles administrative overhead so your team can focus on legal work."}},{"@type":"Question","name":"Do you understand legal compliance requirements?","acceptedAnswer":{"@type":"Answer","text":"Yes. We configure OpenClaw with security controls appropriate for legal practice — Docker sandboxing, audit logging, encrypted credentials, and strict access controls. We understand PIPEDA, solicitor-client privilege requirements, and the importance of data sovereignty for law offices."}}]}</script>
+
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="OpenClawGTA Home">
+    <div class="nav-logo-mark" aria-hidden="true">C</div>
+    OpenClawGTA
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#personal">Personal</a></li>
+    <li><a href="/#services">Business</a></li>
+    <li><a href="/#pricing">Pricing</a></li>
+    <li><a href="/#security">Security</a></li>
+    <li><a href="/#process">Process</a></li>
+    <li><a href="/#contact" class="nav-cta">Book a Call →</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="/#personal">Personal Setup — $499</a>
+  <a href="/#services">Business Deployment</a>
+  <a href="/#pricing">Pricing</a>
+  <a href="/#security">Security</a>
+  <a href="/#process">Process</a>
+  <a href="/#contact">Book a Free Call →</a>
+</div>
+<main>
+<article itemscope itemtype="https://schema.org/Service">
+<section style="position:relative;padding:100px 0 72px;overflow:hidden;">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a> / <span>OpenClaw for Law Offices</span>
+    </nav>
+    <div class="section-label" style="margin-top:24px;">⚖️ Law Offices</div>
+    <h1 itemprop="name">OpenClaw for Law Offices.<br><em style="font-style:italic;color:#c8f04a;">Privilege-aware automation.</em></h1>
+    <p style="max-width:560px;font-size:18px;margin-top:20px;" itemprop="description">Automate intake triage, scheduling, email management, and document organization — without compromising solicitor-client privilege. Docker sandboxed. No data leaves your infrastructure. Audit logging included.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;">
+      <span class="tag tag-green">PIPEDA-Aligned</span>
+      <span class="tag tag-blue">Privilege-Aware</span>
+      <span class="tag tag-gold">Audit Logging</span>
+    </div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px;">
+      <a href="/#contact" class="btn-primary">Book a Call →</a>
+      <a href="/#pricing" class="btn-outline">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="container">
+    <div class="section-label">What it automates</div>
+    <h2 style="margin-bottom:32px;">Administrative overhead,<br>handled by your agent.</h2>
+    <div class="checklist">
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Intake triage</h4><p>New client inquiries sorted and summarized. Your agent categorizes by practice area, flags urgency, and drafts initial responses.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Client scheduling</h4><p>Consultations booked without back-and-forth. Your agent checks availability, sends calendar invites, and confirms appointments.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Email management</h4><p>Inbox triage across partners and associates. Priority sorting, draft responses, and follow-up tracking.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Document organization</h4><p>Files organized into case folders. Your agent moves, renames, and categorizes documents based on your firm's structure.</p></div></div>
+      <div class="checklist-item"><div class="check-icon">✓</div><div><h4>Security-first architecture</h4><p>Docker sandbox isolates the agent. Encrypted credentials. Firewall rules. Audit logging tracks every action. No data leaves your machine.</p></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px;">
+      <div class="card" style="border-color:var(--accent);">
+        <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Personal Setup</div>
+        <div style="font-family:'DM Serif Display',serif;font-size:40px;color:var(--accent);line-height:1;">$499</div>
+        <p style="font-size:13px;margin-top:8px;">Solo practitioner. Your Mac configured for legal workflow. Same-day setup.</p>
+        <a href="/#contact" class="btn-primary" style="margin-top:16px;width:100%;justify-content:center;">Get Started →</a>
+      </div>
+      <div class="card">
+        <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Business Deployment</div>
+        <div style="font-family:'DM Serif Display',serif;font-size:40px;color:var(--text);line-height:1;">$2,500</div>
+        <p style="font-size:13px;margin-top:8px;">Multi-lawyer firms. Security-hardened, audit-logged, fully documented.</p>
+        <a href="/#contact" class="btn-outline" style="margin-top:16px;width:100%;justify-content:center;">Book a Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="container-sm">
+    <div class="section-label">FAQ</div>
+    <h2 style="margin-bottom:36px;">Questions from law offices.</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Is OpenClaw safe for privileged communications?<div class="faq-icon">+</div></button>
+        <div class="faq-answer">OpenClaw runs entirely on your own infrastructure. No data is sent to third-party servers. The system uses Docker sandboxing to isolate the agent, encrypted credential storage, firewall rules, and audit logging. It is designed with solicitor-client privilege in mind — your communications stay on your machine.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What tasks can it handle for a law office?<div class="faq-icon">+</div></button>
+        <div class="faq-answer">OpenClaw can triage incoming inquiries, schedule client consultations, manage email (sort, summarize, draft responses), organize documents into case folders, send deadline reminders, and generate morning briefings with your day's priorities. It handles administrative overhead so your team can focus on legal work.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Do you understand legal compliance requirements?<div class="faq-icon">+</div></button>
+        <div class="faq-answer">Yes. We configure OpenClaw with security controls appropriate for legal practice — Docker sandboxing, audit logging, encrypted credentials, and strict access controls. We understand PIPEDA, solicitor-client privilege requirements, and the importance of data sovereignty for law offices.</div>
+      </div></div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="/#contact" class="btn-primary">Book Your Setup Call →</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Secure automation for your practice.</h2>
+    <p style="max-width:440px;margin:12px auto 28px;font-size:17px;">OpenClaw for law offices. Privilege-aware. PIPEDA-aligned. Setup from $499 CAD.</p>
+    <a href="/#contact" class="btn-primary">Book a Free Call →</a>
+  </div>
+</div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="../" class="nav-logo" style="display:inline-flex;margin-bottom:12px;">
+          <div class="nav-logo-mark" aria-hidden="true">C</div>
+          <span>OpenClawGTA</span>
+        </a>
+        <p style="font-size:14px;max-width:280px;margin-bottom:12px;">OpenClaw installation, security hardening, and support. Based in Vaughan, Ontario.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://linkedin.com/company/openclawgta" target="_blank" rel="noopener" style="color:var(--text-dim);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;">LinkedIn →</a>
+          <a href="https://barrana.ai" target="_blank" rel="noopener" style="color:var(--text-dim);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;">Barrana.ai →</a>
+          <a href="tel:+16473676771" style="color:var(--text-dim);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;">+1 (647) 367-6771</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/#personal">Personal Setup — $499</a></li>
+          <li><a href="/#personal">Mac Mini Bundle — $6,500</a></li>
+          <li><a href="/#services">Business Deployment</a></li>
+          <li><a href="/#security">Security Hardening</a></li>
+          <li><a href="/#services">Managed Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul>
+          <li><a href="../openclaw-setup-vaughan/">Vaughan, ON</a></li>
+          <li><a href="../openclaw-setup-toronto/">Toronto, ON</a></li>
+          <li><a href="../openclaw-setup-mississauga/">Mississauga, ON</a></li>
+          <li><a href="../openclaw-setup-brampton/">Brampton, ON</a></li>
+          <li><a href="../openclaw-setup-markham/">Markham, ON</a></li>
+          <li><a href="../openclaw-setup-gta/">GTA Region</a></li>
+          <li><a href="../openclaw-installation-canada/">Canada-wide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OpenClawGTA / Barrana.ai — Vaughan, Ontario, Canada</span>
+      <div style="display:flex;gap:20px;">
+        <a href="/#privacy" style="color:var(--text-dim);text-decoration:none;">Privacy</a>
+        <a href="/#terms" style="color:var(--text-dim);text-decoration:none;">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../shared.js"></script>
+</body>
+</html>
