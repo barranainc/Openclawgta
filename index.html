@@ -2256,56 +2256,84 @@
 
       <!-- BUSINESS PRICING -->
       <div id="pricing-business" style="display:none;">
-        <div class="pricing-cards">
+        <div class="pricing-cards" style="grid-template-columns:repeat(2,1fr); max-width:860px;">
+
           <div class="pricing-card">
-            <div class="pricing-tier">Business — Starter</div>
-            <h3>Solo Deployment</h3>
-            <div class="price">$2,500 <span>CAD</span></div>
-            <div class="price-note">Starting at — one environment</div>
+            <div class="pricing-tier">Entry</div>
+            <h3>Installation Only</h3>
+            <div class="price">$499 <span>CAD</span></div>
+            <div class="price-note">Flat rate · your machine</div>
             <ul class="pricing-features">
-              <li>Full OpenClaw installation</li>
-              <li>Security hardening</li>
-              <li>Up to 2 integrations</li>
-              <li>14-day hypercare</li>
-              <li>Documentation included</li>
+              <li>OpenClaw install + daemon setup</li>
+              <li>Basic security hardening</li>
+              <li>System confirmed running</li>
+              <li>Written setup handover</li>
             </ul>
+            <p style="font-size:12px; color:var(--text-dim); margin-bottom:20px;">No integrations · No workflow setup · No ongoing support</p>
+            <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Get Started</a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-tier">Starter</div>
+            <h3>One Tool. One Workflow.</h3>
+            <div class="price">$999 <span>CAD</span></div>
+            <div class="price-note">Starting at</div>
+            <ul class="pricing-features">
+              <li>Everything in Installation Only</li>
+              <li>1 standard integration</li>
+              <li>1 simple workflow (up to 3 steps)</li>
+              <li>Basic assistant configuration</li>
+              <li>Setup handover guide</li>
+            </ul>
+            <p style="font-size:12px; color:var(--text-dim); margin-bottom:20px;">1 integration = 1 platform (e.g. Gmail, Calendar, or Drive)</p>
             <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Book a Call</a>
           </div>
 
           <div class="pricing-card featured">
             <div class="pricing-badge">Most Popular</div>
-            <div class="pricing-tier">Business — Team</div>
-            <h3>Team Deployment</h3>
-            <div class="price">$4,500 <span>CAD</span></div>
-            <div class="price-note">Starting at — SMB teams</div>
+            <div class="pricing-tier">Professional</div>
+            <h3>Daily Work. Multiple Tools.</h3>
+            <div class="price">$2,500 <span>CAD</span></div>
+            <div class="price-note">Starting at</div>
             <ul class="pricing-features">
-              <li>Everything in Starter</li>
-              <li>Up to 5 integrations</li>
-              <li>Multi-agent configuration</li>
-              <li>Team walkthrough session</li>
-              <li>Full runbook + admin docs</li>
-              <li>Optional in-person (GTA)</li>
+              <li>Up to 3 standard integrations</li>
+              <li>1 workflow (up to 5 steps)</li>
+              <li>Practical workflow tailoring</li>
+              <li>14-day hypercare</li>
+              <li>Full documentation</li>
             </ul>
+            <p style="font-size:12px; color:var(--text-dim); margin-bottom:20px;">Personal assistant setup — not business automation</p>
             <a href="#" class="btn-primary" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Book a Call →</a>
           </div>
 
-          <div class="pricing-card">
-            <div class="pricing-tier">Business — Managed</div>
-            <h3>Ongoing Support</h3>
-            <div class="price">$800 <span>CAD/mo</span></div>
-            <div class="price-note">After deployment — add-on</div>
+          <div class="pricing-card" style="border-color:rgba(200,240,74,0.4);">
+            <div class="pricing-tier" style="color:var(--accent);">Executive</div>
+            <h3>Power User. Deep Setup.</h3>
+            <div class="price">$4,500 <span>CAD</span></div>
+            <div class="price-note">Starting at</div>
             <ul class="pricing-features">
-              <li>Monthly maintenance</li>
-              <li>Update management</li>
-              <li>Monitoring + alerts</li>
-              <li>Priority support response</li>
-              <li>Workflow optimization</li>
+              <li>Up to 5 standard integrations</li>
+              <li>2 workflows (up to 7 steps each)</li>
+              <li>Deeper assistant configuration</li>
+              <li>Stronger post-launch support</li>
+              <li>In-person option (GTA)</li>
             </ul>
-            <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Learn More</a>
+            <p style="font-size:12px; color:var(--text-dim); margin-bottom:20px;">Still personal assistant scope — not company-wide automation</p>
+            <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center; border-color:var(--accent); color:var(--accent);">Book a Call</a>
           </div>
+
         </div>
-        <p style="text-align:center; font-size:13px; color:var(--text-dim); margin-top:24px;">
-          Enterprise rollouts — <a href="#" onclick="showPage('contact')" style="color:var(--accent);">contact us for custom scope</a>
+
+        <div style="margin-top:16px; padding:20px 24px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; max-width:860px;">
+          <div>
+            <div style="font-family:'DM Mono',monospace; font-size:11px; color:var(--accent); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Custom Scope</div>
+            <p style="font-size:14px; color:var(--text-muted); margin:0;">Need business automation, CRM setup, dashboards, or advanced workflows? We scope these separately after a discovery call.</p>
+          </div>
+          <a href="#" class="btn-outline" onclick="showPage('contact')" style="white-space:nowrap; flex-shrink:0;">Request Custom Scope →</a>
+        </div>
+
+        <p style="font-size:13px; color:var(--text-dim); margin-top:16px; max-width:860px;">
+          <a href="#" onclick="showPage('pricing')" style="color:var(--accent);">View full pricing details →</a> — scope definitions, package breakdown, and FAQ.
         </p>
       </div>
 
@@ -2411,6 +2439,47 @@
           </button>
           <div class="faq-answer">Yes — these are our primary verticals in the GTA. We're familiar with PIPEDA compliance requirements, data residency expectations, and the operational security posture that regulated professional services need. We discuss your specific requirements on the discovery call and scope accordingly.</div>
         </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What counts as a standard integration?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">A standard integration means connecting OpenClaw to one external app or platform — Gmail, Google Calendar, Slack, Notion, Google Drive, and similar supported tools. One platform equals one integration. Each integration includes connection setup, authentication, permission configuration, testing, and enabling up to 3 standard actions within that platform. If a workflow spans Gmail and Calendar, that uses two integrations, not one. Some apps with complex permissions may require custom scoping even if they count as a single platform.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What is included in workflow setup?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">A basic workflow is one simple repeatable task configured inside OpenClaw — up to 1 workflow, up to 5 steps, involving OpenClaw and up to 2 connected apps already included in your package. Examples: OpenClaw checks selected emails and drafts a reply, or reviews your calendar and prepares a meeting brief. Workflows with advanced branching, approvals, OCR, estimate logic, dashboarding, or multi-team coordination are not part of standard packages and require custom scoping.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Are business automations included in standard packages?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">No. Standard packages cover OpenClaw installation, personal assistant configuration, standard app integrations, and basic workflows. Business automation — CRM logic, estimating systems, document processing, multi-department workflows, and operations-wide deployments — requires custom scoping and is quoted separately after a discovery call.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What if I need OpenClaw connected to more apps than my package includes?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Additional standard integrations can be added to any package. The cost depends on the platform and the complexity of the connection. We quote additional integrations before we start — no surprises mid-engagement.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What if I need CRM, estimating, dashboards, or custom automations?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">These fall outside standard package scope and require a separate custom engagement. We scope it after a discovery call, provide a fixed-price proposal or phased plan, and deliver with full documentation. Book a consultation to start that conversation.</div>
+        </div>
+
       </div>
 
       <div style="text-align:center; margin-top:48px;">
@@ -2978,56 +3047,183 @@
   <section>
     <div class="container">
       <div class="section-label">Pricing</div>
-      <h1>OpenClaw Setup Pricing — GTA &amp; Canada.<br><em style="color:var(--accent);">Transparent. No guesswork.</em></h1>
-      <p style="max-width:520px; margin-top:20px; font-size:18px;">Final scope depends on infrastructure, integrations, security requirements, and rollout complexity. These are our starting points — book a call and we'll give you an exact number.</p>
+      <h1>OpenClaw Setup Pricing — GTA &amp; Canada.<br><em style="color:var(--accent);">Transparent. Scoped. No surprises.</em></h1>
+      <p style="max-width:560px; margin-top:20px; font-size:18px;">Standard packages cover installation, standard integrations, and basic workflow setup. Advanced business automation, CRM logic, and custom workflow design are scoped separately. Scope is confirmed on a discovery call before we start.</p>
 
-      <div class="pricing-full">
+      <!-- SCOPE DEFINITIONS -->
+      <div style="margin:40px 0; display:flex; flex-direction:column; gap:10px; max-width:860px;">
+
+        <details style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;">
+          <summary style="padding:16px 20px; cursor:pointer; font-weight:700; font-size:15px; color:var(--text); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            What counts as a standard integration?
+            <span style="color:var(--accent); font-size:18px; font-weight:400; flex-shrink:0; margin-left:12px;">+</span>
+          </summary>
+          <div style="padding:0 20px 20px; font-size:14px; color:var(--text-muted); border-top:1px solid var(--border);">
+            <p style="margin:16px 0 12px;">A standard integration means connecting OpenClaw to <strong style="color:var(--text);">one external app or platform</strong> for a supported use case. <strong style="color:var(--text);">One platform = one integration.</strong></p>
+            <p style="margin-bottom:16px; color:var(--text-dim); font-size:13px;">Each integration includes: connection setup · authentication · permission configuration · testing · enabling up to 3 standard actions within that platform.</p>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:16px;">
+              <div style="padding:12px 14px; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+                <div style="font-family:'DM Mono',monospace; font-size:10px; color:var(--accent); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:6px;">Gmail</div>
+                <p style="font-size:12px; color:var(--text-muted); margin:0;">Read selected emails · summarise messages · draft replies</p>
+              </div>
+              <div style="padding:12px 14px; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+                <div style="font-family:'DM Mono',monospace; font-size:10px; color:var(--accent); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:6px;">Google Calendar</div>
+                <p style="font-size:12px; color:var(--text-muted); margin:0;">Read schedule · create events · check availability</p>
+              </div>
+              <div style="padding:12px 14px; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+                <div style="font-family:'DM Mono',monospace; font-size:10px; color:var(--accent); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:6px;">Google Drive</div>
+                <p style="font-size:12px; color:var(--text-muted); margin:0;">Access selected folders · retrieve files · organise documents</p>
+              </div>
+            </div>
+            <p style="font-size:13px; color:var(--text-dim); padding:12px 14px; background:rgba(200,240,74,0.04); border-left:3px solid var(--accent); border-radius:0 var(--radius) var(--radius) 0; margin:0;">If a workflow uses Gmail <em>and</em> Google Calendar, that uses 2 integrations — not 1. Workflows cannot use more apps than included in your package. Some apps with complex permission structures may require custom scoping even if they count as a single platform.</p>
+          </div>
+        </details>
+
+        <details style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;">
+          <summary style="padding:16px 20px; cursor:pointer; font-weight:700; font-size:15px; color:var(--text); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            What is included in basic workflow setup?
+            <span style="color:var(--accent); font-size:18px; font-weight:400; flex-shrink:0; margin-left:12px;">+</span>
+          </summary>
+          <div style="padding:0 20px 20px; font-size:14px; color:var(--text-muted); border-top:1px solid var(--border);">
+            <p style="margin:16px 0 12px;">A basic workflow is <strong style="color:var(--text);">one simple repeatable task</strong> — up to 1 workflow, up to 5 steps, involving OpenClaw and up to 2 connected apps included in your package.</p>
+            <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:16px;">
+              <div style="display:flex; align-items:flex-start; gap:10px; padding:10px 14px; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+                <span style="color:var(--accent); flex-shrink:0;">→</span>
+                <p style="font-size:13px; margin:0;">OpenClaw checks selected emails, summarises them, and drafts a reply</p>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:10px; padding:10px 14px; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+                <span style="color:var(--accent); flex-shrink:0;">→</span>
+                <p style="font-size:13px; margin:0;">OpenClaw reviews tomorrow's calendar and prepares a meeting brief</p>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:10px; padding:10px 14px; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+                <span style="color:var(--accent); flex-shrink:0;">→</span>
+                <p style="font-size:13px; margin:0;">OpenClaw finds a requested file from Drive and summarises its contents</p>
+              </div>
+            </div>
+            <p style="font-size:13px; color:var(--text-dim); padding:12px 14px; background:rgba(255,100,100,0.04); border-left:3px solid rgba(255,80,80,0.35); border-radius:0 var(--radius) var(--radius) 0; margin:0;">Not included: advanced branching, approval logic, OCR pipelines, estimate generation, dashboarding, multi-team coordination, or business-wide process design. These require custom scoping.</p>
+          </div>
+        </details>
+
+        <details style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;">
+          <summary style="padding:16px 20px; cursor:pointer; font-weight:700; font-size:15px; color:var(--text); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            What is not included in standard packages?
+            <span style="color:var(--accent); font-size:18px; font-weight:400; flex-shrink:0; margin-left:12px;">+</span>
+          </summary>
+          <div style="padding:0 20px 20px; font-size:14px; color:var(--text-muted); border-top:1px solid var(--border);">
+            <p style="margin:16px 0 16px;">Standard packages are for <strong style="color:var(--text);">personal assistant setup and OpenClaw configuration</strong>. The following require a Custom scope conversation:</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:16px;">
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Advanced business automation</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Company-wide workflow design</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> CRM or ERP integration logic</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Custom dashboards or reporting</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Quoting or estimating systems</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> OCR or document parsing pipelines</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Multi-department automations</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Project tracking systems</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Complex or cross-platform integrations</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Multi-step workflows beyond package limits</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> More connected apps than package includes</div>
+              <div style="display:flex; gap:8px; font-size:13px; color:var(--text-muted);"><span style="color:var(--text-dim); flex-shrink:0;">✗</span> Team-wide or department deployments</div>
+            </div>
+            <p style="font-size:13px; color:var(--text-muted); margin:0;">If your use case involves any of the above, the Custom package is the right starting point — we scope it after a discovery call.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- PACKAGE CARDS ROW 1 -->
+      <div class="pricing-full" style="grid-template-columns:repeat(3,1fr); margin-bottom:16px;">
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Entry</div>
+          <h3>Installation Only</h3>
+          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">OpenClaw installed and confirmed running on your machine. Nothing more — nothing less.</p>
+          <div class="price">$499 <span>CAD</span></div>
+          <div class="price-note">Flat rate · your machine</div>
+          <ul class="pricing-features">
+            <li>OpenClaw installation + Gateway daemon</li>
+            <li>Node.js environment configured</li>
+            <li>Basic security hardening</li>
+            <li>System health confirmed + running</li>
+            <li>Brief written setup handover</li>
+            <li>Mac (M1+) or Linux</li>
+          </ul>
+          <div style="padding:14px 16px; background:rgba(255,80,80,0.04); border:1px solid rgba(255,80,80,0.15); border-radius:var(--radius); font-size:12px; color:var(--text-dim); margin-bottom:24px;">
+            <strong style="color:var(--text-muted);">Not included:</strong> Integrations · workflow setup · channel connection · assistant configuration · ongoing support
+          </div>
+          <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Get Started</a>
+        </div>
 
         <div class="pricing-card">
           <div class="pricing-tier">Starter</div>
-          <h3>Solo</h3>
-          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">Founders, solo operators, small teams trying OpenClaw for the first time.</p>
-          <div class="price">$2,500 <span>CAD</span></div>
+          <h3>One Tool. One Use Case.</h3>
+          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">Individual or founder wanting OpenClaw connected to one app with one simple workflow.</p>
+          <div class="price">$999 <span>CAD</span></div>
           <div class="price-note">Starting at</div>
           <ul class="pricing-features">
-            <li>Single OpenClaw instance</li>
-            <li>One environment (VPS or local)</li>
-            <li>Security hardening included</li>
-            <li>Up to 2 integrations</li>
-            <li>Basic documentation</li>
-            <li>14-day hypercare</li>
+            <li>Everything in Installation Only</li>
+            <li>1 standard integration</li>
+            <li>1 simple workflow (up to 3 steps)</li>
+            <li>Basic assistant configuration</li>
+            <li>Setup handover + quick-start guide</li>
           </ul>
-          <div style="padding:16px; background:var(--surface2); border-radius:var(--radius); font-size:13px; color:var(--text-dim); margin-bottom:24px;">
-            <strong style="color:var(--text-muted);">Client provides:</strong> Server/VPS access, API keys for integrations, 2–3 hours for kickoff + handover
+          <div style="padding:14px 16px; background:rgba(200,240,74,0.04); border:1px solid rgba(200,240,74,0.12); border-radius:var(--radius); font-size:12px; color:var(--text-dim); margin-bottom:24px;">
+            <strong style="color:var(--text-muted);">Example:</strong> Gmail connected · OpenClaw checks inbox and drafts replies on request
           </div>
-          <a href="#" class="btn-outline" onclick="showPage('contact')">Book a Call</a>
+          <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Book a Call</a>
         </div>
 
         <div class="pricing-card featured">
           <div class="pricing-badge">Most Popular</div>
-          <div class="pricing-tier">Business</div>
-          <h3>Team</h3>
-          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">SMB teams of 2–15, professional services, regulated industries across GTA.</p>
+          <div class="pricing-tier">Professional</div>
+          <h3>Daily Work. Multiple Tools.</h3>
+          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">Operator or founder integrating OpenClaw across a few tools with a working daily workflow.</p>
+          <div class="price">$2,500 <span>CAD</span></div>
+          <div class="price-note">Starting at</div>
+          <ul class="pricing-features">
+            <li>Everything in Starter</li>
+            <li>Up to 3 standard integrations</li>
+            <li>1 basic workflow (up to 5 steps)</li>
+            <li>Practical workflow tailoring</li>
+            <li>Reminder / follow-up setup</li>
+            <li>14-day hypercare</li>
+            <li>Full documentation</li>
+          </ul>
+          <div style="padding:14px 16px; background:rgba(200,240,74,0.05); border:1px solid rgba(200,240,74,0.15); border-radius:var(--radius); font-size:12px; color:var(--text-dim); margin-bottom:24px;">
+            <strong style="color:var(--accent);">Example:</strong> Gmail + Calendar + Drive · OpenClaw manages email triage, daily brief, and file retrieval
+          </div>
+          <a href="#" class="btn-primary" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Book a Call →</a>
+        </div>
+
+      </div>
+
+      <!-- PACKAGE CARDS ROW 2 -->
+      <div class="pricing-full" style="grid-template-columns:repeat(3,1fr); margin-bottom:24px;">
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Executive</div>
+          <h3>Power User. Deep Setup.</h3>
+          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">Power user wanting deeper personal assistant behaviour across multiple tools.</p>
           <div class="price">$4,500 <span>CAD</span></div>
           <div class="price-note">Starting at</div>
           <ul class="pricing-features">
-            <li>Multi-agent configuration</li>
-            <li>Up to 5 integrations</li>
-            <li>Full security hardening</li>
-            <li>Complete runbook + admin docs</li>
-            <li>Team walkthrough session</li>
-            <li>14-day hypercare</li>
-            <li>In-person option (GTA)</li>
+            <li>Everything in Professional</li>
+            <li>Up to 5 standard integrations</li>
+            <li>Up to 2 workflows (up to 7 steps each)</li>
+            <li>Deeper assistant configuration</li>
+            <li>More refined setup and testing</li>
+            <li>Stronger post-launch support window</li>
+            <li>Optional in-person (GTA)</li>
           </ul>
-          <div style="padding:16px; background:rgba(200,240,74,0.05); border:1px solid rgba(200,240,74,0.15); border-radius:var(--radius); font-size:13px; color:var(--text-dim); margin-bottom:24px;">
-            <strong style="color:var(--accent);">Adds:</strong> Multi-agent design, team walkthrough, recorded handover, PIPEDA-aligned deployment for regulated clients
+          <div style="padding:14px 16px; background:var(--surface2); border-radius:var(--radius); font-size:12px; color:var(--text-dim); margin-bottom:24px;">
+            <strong style="color:var(--text-muted);">Note:</strong> Still personal assistant scope — executive productivity setup, not company-wide automation.
           </div>
-          <a href="#" class="btn-primary" onclick="showPage('contact')">Book a Call →</a>
+          <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Book a Call</a>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-tier">Managed</div>
-          <h3>Support</h3>
+          <h3>Ongoing Support</h3>
           <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">After your deployment — keep it running without becoming your own ops team.</p>
           <div class="price">$800 <span>CAD/mo</span></div>
           <div class="price-note">Add-on after any deployment</div>
@@ -3039,121 +3235,196 @@
             <li>Monthly workflow review</li>
             <li>Incident response included</li>
           </ul>
-          <div style="padding:16px; background:var(--surface2); border-radius:var(--radius); font-size:13px; color:var(--text-dim); margin-bottom:24px;">
+          <div style="padding:14px 16px; background:var(--surface2); border-radius:var(--radius); font-size:12px; color:var(--text-dim); margin-bottom:24px;">
             <strong style="color:var(--text-muted);">Minimum:</strong> 3-month commitment after deployment
           </div>
-          <a href="#" class="btn-outline" onclick="showPage('contact')">Book a Call</a>
+          <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center;">Learn More</a>
         </div>
 
-        <div class="pricing-card">
-          <div class="pricing-tier">Enterprise</div>
-          <h3>Custom</h3>
-          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">Multi-site, compliance-sensitive, or complex multi-team deployments.</p>
-          <div class="price" style="font-size:28px; margin-top:20px;">Custom<br><span>scope</span></div>
-          <div class="price-note">Contact us to discuss</div>
+        <div class="pricing-card" style="border-color:rgba(200,240,74,0.4); background:linear-gradient(160deg, rgba(200,240,74,0.04), var(--surface));">
+          <div class="pricing-tier" style="color:var(--accent);">Custom</div>
+          <h3>Advanced Requirements</h3>
+          <p style="font-size:14px; color:var(--text-muted); margin:8px 0 0;">Your needs go beyond a personal OpenClaw setup and require broader workflow design, business automation, or advanced integration logic.</p>
+          <div class="price" style="font-size:28px; margin-top:20px;">Scoped<br><span>separately</span></div>
+          <div class="price-note">Discovery-led · quoted after call</div>
           <ul class="pricing-features">
-            <li>Rollout planning and governance</li>
-            <li>Multi-province or multi-site</li>
-            <li>Pilot + phased rollout</li>
-            <li>Compliance-aligned documentation</li>
-            <li>SLA support tiers available</li>
-            <li>Dedicated point of contact</li>
+            <li>Advanced business workflow automation</li>
+            <li>CRM / operations integrations</li>
+            <li>Document workflows and OCR pipelines</li>
+            <li>Dashboards and reporting logic</li>
+            <li>Multi-user or multi-team systems</li>
+            <li>Cross-platform automations</li>
+            <li>Company or department-level deployment</li>
           </ul>
-          <div style="padding:16px; background:var(--surface2); border-radius:var(--radius); font-size:13px; color:var(--text-dim); margin-bottom:24px;">
-            <strong style="color:var(--text-muted);">Start with:</strong> A discovery call to discuss scope, compliance, and rollout timeline
+          <div style="padding:14px 16px; background:rgba(200,240,74,0.04); border:1px solid rgba(200,240,74,0.15); border-radius:var(--radius); font-size:12px; color:var(--text-muted); margin-bottom:24px;">
+            <strong style="color:var(--accent);">How it works:</strong> Tell us what you need. We assess scope and come back with a fixed-price proposal or phased engagement.
           </div>
-          <a href="#" class="btn-outline" onclick="showPage('contact')">Contact Us</a>
+          <a href="#" class="btn-outline" onclick="showPage('contact')" style="text-align:center; justify-content:center; border-color:var(--accent); color:var(--accent);">Request Custom Scope →</a>
         </div>
 
       </div>
 
-      <!-- Comparison table -->
-      <h3 style="margin:64px 0 24px; font-size:24px;">What's included in each plan</h3>
-
-      <div class="pricing-includes">
-        <div class="pricing-table-header">
-          <div>Feature</div>
-          <div>Starter</div>
-          <div>Business</div>
-          <div>Managed</div>
-          <div>Enterprise</div>
+      <!-- NEED SOMETHING MORE CALLOUT -->
+      <div style="padding:24px 28px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); margin-bottom:56px; display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap;">
+        <div style="flex:1; min-width:260px;">
+          <h4 style="font-size:16px; margin-bottom:8px;">Looking for business workflow automation?</h4>
+          <p style="font-size:14px; color:var(--text-muted); margin:0;">If you need OpenClaw connected to your operations stack, CRM, estimating system, or require department-wide workflows — that's a custom scope conversation. We scope and quote these separately after understanding your requirements.</p>
         </div>
-        <div class="pricing-table-row">
+        <a href="#" class="btn-primary" onclick="showPage('contact')" style="white-space:nowrap; flex-shrink:0; align-self:center;">Book a Consultation →</a>
+      </div>
+
+      <!-- Comparison table -->
+      <h3 style="margin:0 0 24px; font-size:24px;">What's included in each plan</h3>
+
+      <div class="pricing-includes" style="overflow-x:auto;">
+        <div class="pricing-table-header" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
+          <div>Feature</div>
+          <div>Install Only</div>
+          <div>Starter</div>
+          <div>Professional</div>
+          <div>Executive</div>
+          <div>Custom</div>
+        </div>
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
           <div>OpenClaw installation</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
+          <div class="check-yes">✓</div>
         </div>
-        <div class="pricing-table-row">
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
           <div>Security hardening</div>
+          <div>Basic</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
         </div>
-        <div class="pricing-table-row">
-          <div>Integrations</div>
-          <div>Up to 2</div>
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
+          <div>Standard integrations</div>
+          <div class="check-no">—</div>
+          <div>1</div>
+          <div>Up to 3</div>
           <div>Up to 5</div>
-          <div class="check-partial">Maintenance</div>
           <div>Custom</div>
         </div>
-        <div class="pricing-table-row">
-          <div>Multi-agent configuration</div>
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
+          <div>Workflow setup</div>
           <div class="check-no">—</div>
+          <div>1 (3 steps)</div>
+          <div>1 (5 steps)</div>
+          <div>2 (7 steps ea.)</div>
+          <div>Custom</div>
+        </div>
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
+          <div>Assistant configuration</div>
+          <div class="check-no">—</div>
+          <div>Basic</div>
           <div class="check-yes">✓</div>
-          <div class="check-partial">As scoped</div>
+          <div>Deep</div>
           <div class="check-yes">✓</div>
         </div>
-        <div class="pricing-table-row">
-          <div>Full documentation + runbooks</div>
-          <div class="check-partial">Basic</div>
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
+          <div>Documentation + handover</div>
+          <div>Brief</div>
+          <div>Brief</div>
+          <div class="check-yes">Full</div>
           <div class="check-yes">Full</div>
           <div class="check-yes">✓</div>
-          <div class="check-yes">✓</div>
         </div>
-        <div class="pricing-table-row">
-          <div>Team walkthrough session</div>
-          <div class="check-no">—</div>
-          <div class="check-yes">✓</div>
-          <div class="check-yes">✓</div>
-          <div class="check-yes">✓</div>
-        </div>
-        <div class="pricing-table-row">
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
           <div>14-day hypercare</div>
-          <div class="check-yes">✓</div>
-          <div class="check-yes">✓</div>
-          <div class="check-yes">✓</div>
-          <div class="check-yes">✓</div>
-        </div>
-        <div class="pricing-table-row">
-          <div>Monthly maintenance + updates</div>
           <div class="check-no">—</div>
           <div class="check-no">—</div>
           <div class="check-yes">✓</div>
           <div class="check-yes">✓</div>
+          <div class="check-yes">✓</div>
         </div>
-        <div class="pricing-table-row">
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
           <div>In-person setup (GTA)</div>
           <div class="check-partial">+ fee</div>
+          <div class="check-partial">+ fee</div>
+          <div class="check-partial">+ fee</div>
           <div class="check-yes">Included</div>
-          <div class="check-partial">As needed</div>
           <div class="check-yes">✓</div>
         </div>
-        <div class="pricing-table-row">
-          <div>SLA support tier</div>
+        <div class="pricing-table-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr; min-width:700px;">
+          <div>Business automation scope</div>
           <div class="check-no">—</div>
           <div class="check-no">—</div>
-          <div class="check-partial">Optional</div>
+          <div class="check-no">—</div>
+          <div class="check-no">—</div>
           <div class="check-yes">✓</div>
         </div>
+      </div>
+
+      <!-- FAQ Pricing -->
+      <h3 style="margin:64px 0 24px; font-size:24px;">Pricing questions.</h3>
+      <div class="faq-list" style="max-width:860px;">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What counts as a standard integration?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">A standard integration means connecting OpenClaw to one external app or platform — Gmail, Google Calendar, Slack, Notion, Google Drive, and similar supported tools. One platform equals one integration. Each integration includes connection setup, authentication, permission configuration, testing, and enabling up to 3 standard actions within that platform. If a workflow spans Gmail and Calendar, that uses two integrations, not one. Some apps with complex permissions may require custom scoping even if they count as a single platform.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What is included in basic workflow setup?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">A basic workflow is one simple repeatable task configured inside OpenClaw — up to 1 workflow, up to 5 steps, involving OpenClaw and up to 2 connected apps included in your package. Examples: OpenClaw checks selected emails and drafts a reply, or reviews your calendar and prepares a meeting brief. Workflows with advanced branching, approvals, OCR, estimate logic, dashboarding, or multi-team coordination require custom scoping.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Are business automations included in these packages?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">No. Standard packages cover OpenClaw installation, personal assistant configuration, standard app integrations, and basic workflows. Business automation — CRM logic, estimating systems, document processing pipelines, multi-department workflows, and operations-wide deployments — requires custom scoping and is quoted separately after a discovery call.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What if I need OpenClaw connected to more apps than my package includes?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Additional standard integrations can be added to any package. The cost depends on the platform and the complexity of the connection. We quote additional integrations before we start — no surprises mid-engagement.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What if I need CRM, estimating, dashboards, or custom automations?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">These fall outside standard package scope and require a separate custom engagement. We scope it after a discovery call, provide a fixed-price proposal or phased plan, and deliver with full documentation. Book a consultation to start that conversation.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can you do the setup in person in the GTA?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Yes. In-person setup is available across the GTA — Vaughan, Toronto, Mississauga, Brampton, Markham, Richmond Hill, Scarborough, and North York. In-person is included in the Executive package, available for an additional fee on Installation Only, Starter, and Professional, and standard on all Custom engagements. Remote setup via screen share is available Canada-wide and worldwide.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What is the difference between Installation Only and Starter?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Installation Only gets OpenClaw installed and confirmed running on your machine — no integrations, no workflow setup, no channel connections. Starter adds one standard integration and one simple workflow (up to 3 steps), so your assistant is actually connected to a real tool and doing something useful from day one.</div>
+        </div>
+
       </div>
 
       <div style="margin-top:48px; padding:32px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); display:flex; gap:24px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
         <div>
           <h3 style="font-size:20px; margin-bottom:8px;">Not sure which plan fits?</h3>
-          <p style="font-size:15px;">Tell us your infrastructure, team size, and what you need automated. We'll come back with exact scope and pricing — usually same day.</p>
+          <p style="font-size:15px;">Tell us your infrastructure, what you want connected, and what you want automated. We'll confirm scope and pricing — usually same day.</p>
         </div>
         <a href="#" class="btn-primary" onclick="showPage('contact')" style="white-space:nowrap;">Book a Free Discovery Call →</a>
       </div>
