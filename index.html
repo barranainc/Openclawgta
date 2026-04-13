@@ -15,6 +15,7 @@
 <meta name="geo.position" content="43.8361;-79.4983">
 <meta name="ICBM" content="43.8361, -79.4983">
 <link rel="canonical" href="https://openclawgta.com/">
+<link rel="alternate" type="application/rss+xml" title="OpenClawGTA Blog" href="https://openclawgta.com/blog/rss.xml">
 
 <!-- ═══ OPEN GRAPH ═══ -->
 <meta property="og:type" content="website">
@@ -32,6 +33,49 @@
 <meta name="twitter:title" content="OpenClaw Setup Service GTA — Vaughan, Toronto, Canada">
 <meta name="twitter:description" content="Secure OpenClaw deployment for GTA businesses. Your infrastructure. Full docs. 14-day hypercare. In-person available.">
 <meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+
+<!-- ═══ STRUCTURED DATA — WebSite with SearchAction ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "OpenClawGTA",
+  "url": "https://openclawgta.com",
+  "description": "Professional OpenClaw installation, security hardening, and support for businesses across the GTA and Canada.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "OpenClawGTA",
+    "url": "https://openclawgta.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://openclawgta.com/blog/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- ═══ STRUCTURED DATA — Organization ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OpenClawGTA",
+  "alternateName": "Barrana.ai",
+  "url": "https://openclawgta.com",
+  "logo": "https://openclawgta.com/og-image.jpg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+16473676771",
+    "contactType": "sales",
+    "email": "hello@openclawgta.com",
+    "areaServed": "CA",
+    "availableLanguage": ["English", "French"]
+  },
+  "sameAs": ["https://barrana.ai"],
+  "knowsAbout": ["OpenClaw", "AI Agent Deployment", "OpenClaw Security Hardening", "AI Automation"]
+}
+</script>
 
 <!-- ═══ STRUCTURED DATA — LocalBusiness ═══ -->
 <script type="application/ld+json">
@@ -1821,6 +1865,7 @@
     <li><a href="#" onclick="showPage('pricing')" aria-label="OpenClaw setup pricing">Pricing</a></li>
     <li><a href="#" onclick="showPage('security')" aria-label="OpenClaw security hardening">Security</a></li>
     <li><a href="#" onclick="showPage('process')" aria-label="Our deployment process">Process</a></li>
+    <li><a href="blog/" aria-label="OpenClaw guides and knowledge base">Blog</a></li>
     <li><a href="#" onclick="showPage('contact')" class="nav-cta" aria-label="Book a free discovery call">Book a Call →</a></li>
   </ul>
   <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
@@ -1835,6 +1880,7 @@
   <a href="#" onclick="navTo('pricing')">Pricing</a>
   <a href="#" onclick="navTo('security')">Security</a>
   <a href="#" onclick="navTo('process')">Process</a>
+  <a href="blog/">Blog</a>
   <a href="#" onclick="navTo('contact')">Book a Free Call →</a>
 </div>
 
@@ -3999,6 +4045,7 @@
           <li><a href="#" onclick="showPage('security'); return false;">Security</a></li>
           <li><a href="#" onclick="showPage('pricing'); return false;">Pricing</a></li>
           <li><a href="#" onclick="showPage('contact'); return false;">Book a Call</a></li>
+          <li><a href="blog/">Blog</a></li>
         </ul>
       </div>
       <div class="footer-col">

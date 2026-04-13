@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>OpenClawGTA Blog</title>
+  <link>https://openclawgta.com/blog/</link>
+  <description>Guides, tutorials, comparisons, and expert insights about OpenClaw — the open-source AI agent. Setup guides, security best practices, industry use cases, and more.</description>
+  <language>en-ca</language>
+  <lastBuildDate>Sat, 12 Apr 2026 12:00:00 -0400</lastBuildDate>
+  <atom:link href="https://openclawgta.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+  <image>
+    <url>https://openclawgta.com/og-image.jpg</url>
+    <title>OpenClawGTA Blog</title>
+    <link>https://openclawgta.com/blog/</link>
+  </image>
+
+  <item>
+    <title>What Is OpenClaw? The Complete Answer for 2026</title>
+    <link>https://openclawgta.com/blog/what-is-openclaw/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/what-is-openclaw/</guid>
+    <description>OpenClaw is an open-source personal AI agent that runs on your own computer or server and takes real actions — not just answers questions. Here's everything you need to know.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Understanding OpenClaw</category>
+  </item>
+
+  <item>
+    <title>How Does OpenClaw Work? The Non-Technical Explanation</title>
+    <link>https://openclawgta.com/blog/how-does-openclaw-work/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/how-does-openclaw-work/</guid>
+    <description>OpenClaw works by connecting your messaging apps to an AI model that can take real actions. Here's how the whole system works, explained without jargon.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Understanding OpenClaw</category>
+  </item>
+
+  <item>
+    <title>OpenClaw for Beginners: Everything You Need to Know Before Getting Started</title>
+    <link>https://openclawgta.com/blog/openclaw-for-beginners/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-for-beginners/</guid>
+    <description>New to OpenClaw? Here's exactly what it is, what it does, what it costs, and how to get started — explained for non-technical people.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Understanding OpenClaw</category>
+  </item>
+
+  <item>
+    <title>OpenClaw vs. ChatGPT: What's the Actual Difference?</title>
+    <link>https://openclawgta.com/blog/openclaw-vs-chatgpt/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-vs-chatgpt/</guid>
+    <description>OpenClaw and ChatGPT are not the same type of tool. Here's the honest comparison — what each does, where each wins, and which one is right for you.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Comparison</category>
+  </item>
+
+  <item>
+    <title>OpenClaw Security Risks: What They Are and How to Prevent Them</title>
+    <link>https://openclawgta.com/blog/openclaw-security-risks/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-security-risks/</guid>
+    <description>OpenClaw has real security risks if misconfigured. Here's exactly what the risks are, what has happened to exposed installations, and how professional setup prevents them.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Security</category>
+  </item>
+
+  <item>
+    <title>How to Set Up OpenClaw: What's Involved and What to Expect</title>
+    <link>https://openclawgta.com/blog/openclaw-personal-setup-guide/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-personal-setup-guide/</guid>
+    <description>What does OpenClaw setup actually involve? Hardware choice, installation, security hardening, channel connection, and workflow configuration — explained step by step.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Setup Guide</category>
+  </item>
+
+  <item>
+    <title>How to Connect OpenClaw to WhatsApp: The Complete Guide</title>
+    <link>https://openclawgta.com/blog/openclaw-whatsapp-setup/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-whatsapp-setup/</guid>
+    <description>Step-by-step guide to linking your agent, configuring the connection, and using it from your phone.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Setup Guide</category>
+  </item>
+
+  <item>
+    <title>OpenClaw for Real Estate Agents: How GTA Agents Are Using AI Agents in 2026</title>
+    <link>https://openclawgta.com/blog/openclaw-for-real-estate-agents/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-for-real-estate-agents/</guid>
+    <description>Real estate agents in the GTA are using OpenClaw to handle lead follow-up, listing research, appointment scheduling, and client communication.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Industry</category>
+  </item>
+
+  <item>
+    <title>OpenClaw for Immigration Consultants: Managing High-Volume Cases with AI</title>
+    <link>https://openclawgta.com/blog/openclaw-for-immigration-consultants/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-for-immigration-consultants/</guid>
+    <description>Immigration consultants are using OpenClaw to manage document checklists, deadline tracking, client follow-up, and government update monitoring.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Industry</category>
+  </item>
+
+  <item>
+    <title>OpenClaw for Mortgage Brokers: How AI Agents Are Changing the GTA Mortgage Business</title>
+    <link>https://openclawgta.com/blog/openclaw-for-mortgage-brokers/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-for-mortgage-brokers/</guid>
+    <description>Mortgage brokers in Toronto and the GTA are using OpenClaw to manage client follow-up, rate research, pipeline updates, and referral source outreach.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Industry</category>
+  </item>
+
+  <item>
+    <title>How Much Does OpenClaw Actually Cost? The Complete Breakdown</title>
+    <link>https://openclawgta.com/blog/openclaw-pricing-explained/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-pricing-explained/</guid>
+    <description>Hardware, AI model fees, setup, and ongoing costs — the honest breakdown for Canadian solopreneurs and small businesses.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Cost &amp; ROI</category>
+  </item>
+
+  <item>
+    <title>OpenClaw on Mac Mini: Why It's the Best Home Base for Your AI Agent</title>
+    <link>https://openclawgta.com/blog/openclaw-mac-mini-setup/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-mac-mini-setup/</guid>
+    <description>Why do most OpenClaw users choose a Mac Mini? Silent, efficient, 24/7 uptime, great Apple integrations.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Setup Guide</category>
+  </item>
+
+  <item>
+    <title>How to Set Up an OpenClaw Morning Briefing</title>
+    <link>https://openclawgta.com/blog/openclaw-morning-briefing-setup/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-morning-briefing-setup/</guid>
+    <description>The most popular OpenClaw use case — a daily summary delivered to your WhatsApp at 7am. Here's what to include and how to set it up.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Setup Guide</category>
+  </item>
+
+  <item>
+    <title>How OpenClaw Handles Email: What It Can and Can't Do</title>
+    <link>https://openclawgta.com/blog/openclaw-email-management/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-email-management/</guid>
+    <description>OpenClaw can read, categorize, draft, and manage your email — but there are important limits.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Setup Guide</category>
+  </item>
+
+  <item>
+    <title>OpenClaw vs. Zapier: Which One Actually Automates Your Business?</title>
+    <link>https://openclawgta.com/blog/openclaw-vs-zapier/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-vs-zapier/</guid>
+    <description>OpenClaw and Zapier both automate work, but in very different ways. Here's when each wins.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Comparison</category>
+  </item>
+
+  <item>
+    <title>OpenClaw for Small Business: A Practical Guide for Canadian Business Owners</title>
+    <link>https://openclawgta.com/blog/openclaw-for-small-business-canada/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-for-small-business-canada/</guid>
+    <description>How small businesses in Canada are using OpenClaw to run leaner operations, respond faster to clients, and free up the owner's time.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Industry</category>
+  </item>
+
+  <item>
+    <title>OpenClaw and Data Privacy: Who Sees Your Data?</title>
+    <link>https://openclawgta.com/blog/openclaw-data-privacy/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-data-privacy/</guid>
+    <description>OpenClaw is self-hosted — your data doesn't go to any third party. Here's what data privacy looks like.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Security</category>
+  </item>
+
+  <item>
+    <title>OpenClaw vs. Hiring a Virtual Assistant: The Honest Comparison</title>
+    <link>https://openclawgta.com/blog/openclaw-vs-hiring-va/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-vs-hiring-va/</guid>
+    <description>Should you get OpenClaw or hire a VA? An honest comparison of cost, capability, and when each makes sense.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Comparison</category>
+  </item>
+
+  <item>
+    <title>What Is SOUL.md? How to Configure Your OpenClaw Agent's Personality</title>
+    <link>https://openclawgta.com/blog/openclaw-soul-md-guide/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-soul-md-guide/</guid>
+    <description>SOUL.md is the file that defines how your OpenClaw agent thinks and behaves. Here's what to put in it.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Setup Guide</category>
+  </item>
+
+  <item>
+    <title>How to Calculate Your ROI from OpenClaw</title>
+    <link>https://openclawgta.com/blog/openclaw-roi-calculator/</link>
+    <guid isPermaLink="true">https://openclawgta.com/blog/openclaw-roi-calculator/</guid>
+    <description>How do you know if OpenClaw is worth it? Here's the exact ROI calculation and what metrics matter.</description>
+    <dc:creator>OpenClawGTA</dc:creator>
+    <pubDate>Sat, 12 Apr 2026 12:00:00 -0400</pubDate>
+    <category>Cost &amp; ROI</category>
+  </item>
+
+</channel>
+</rss>

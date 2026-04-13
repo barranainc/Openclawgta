@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw Security Risks Explained | How to Stay Safe — OpenClawGTA</title>
+<meta name="description" content="OpenClaw has real security risks if misconfigured. Here's exactly what the risks are, what has happened to exposed installations, and how professional setup prevents them.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Vaughan, Ontario, Canada">
+<link rel="canonical" href="https://openclawgta.com/blog/openclaw-security-risks/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OpenClawGTA">
+<meta property="og:title" content="OpenClaw Security Risks Explained | How to Stay Safe — OpenClawGTA">
+<meta property="og:description" content="OpenClaw has real security risks if misconfigured. Here's exactly what the risks are, what has happened to exposed installations, and how professional setup prevents them.">
+<meta property="og:url" content="https://openclawgta.com/blog/openclaw-security-risks/">
+<meta property="og:image" content="https://openclawgta.com/og-image.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw Security Risks Explained | How to Stay Safe — OpenClawGTA">
+<meta name="twitter:description" content="OpenClaw has real security risks if misconfigured. Here's exactly what the risks are, what has happened to exposed installations, and how professional setup prevents them.">
+<meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c8f04a'/><text x='16' y='23' text-anchor='middle' font-size='20' font-family='monospace' font-weight='bold' fill='%23000'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://openclawgta.com/"},
+  {"@type":"ListItem","position":2,"name":"Blog","item":"https://openclawgta.com/blog/"},
+  {"@type":"ListItem","position":3,"name":"OpenClaw Security Risks","item":"https://openclawgta.com/blog/openclaw-security-risks/"}
+]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"OpenClaw Security Risks: What They Are and How to Prevent Them",
+  "description":"OpenClaw has real security risks if misconfigured. Here's exactly what the risks are, what has happened to exposed installations, and how professional setup prevents them.",
+  "datePublished":"2026-04-12",
+  "dateModified":"2026-04-12",
+  "author":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com"},
+  "publisher":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com","logo":{"@type":"ImageObject","url":"https://openclawgta.com/og-image.jpg"}}
+}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"How do I know if my OpenClaw installation is secure?","acceptedAnswer":{"@type":"Answer","text":"Run 'openclaw doctor' from the terminal — it performs a security audit and flags common misconfigurations. Check that port 18789 is not accessible from outside your machine, that authentication tokens are enabled, and that the process is not running as root. If you're unsure, a professional security review can verify your setup."}},
+  {"@type":"Question","name":"Is OpenClaw safe for business use?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw can be safe for business use when properly configured with security hardening, authentication, firewall rules, and human-in-the-loop confirmations for sensitive actions. Without these measures, it poses significant risk to any connected business accounts."}},
+  {"@type":"Question","name":"What is CVE-2026-25253?","acceptedAnswer":{"@type":"Answer","text":"CVE-2026-25253 is a critical vulnerability in OpenClaw's default configuration where the gateway API listens on all network interfaces (0.0.0.0) without authentication. This means anyone who can reach your server's IP address can send commands to your agent and access your connected accounts. The fix is to bind the gateway to localhost (127.0.0.1) and enable authentication."}},
+  {"@type":"Question","name":"Should I run OpenClaw on my main computer?","acceptedAnswer":{"@type":"Answer","text":"It's safer to run OpenClaw on a dedicated machine or VPS separate from your primary computer. This limits the blast radius if something goes wrong — the agent only has access to what's on that machine, not your entire digital life. A Mac Mini or inexpensive VPS is ideal for this purpose."}},
+  {"@type":"Question","name":"Does OpenClawGTA handle security as part of setup?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every OpenClawGTA installation includes full security hardening: binding the gateway to localhost, enabling authentication tokens, configuring firewall rules, setting up the process to run as a non-root user, and running the openclaw doctor audit. Security is not an add-on — it's built into every setup we perform."}}
+]}</script>
+</head>
+<body>
+
+<nav>
+  <a href="../../" class="nav-logo"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+  <ul class="nav-links">
+    <li><a href="../../personal/">Personal</a></li>
+    <li><a href="../../services/">Business</a></li>
+    <li><a href="../../pricing/">Pricing</a></li>
+    <li><a href="../../security/">Security</a></li>
+    <li><a href="../">Blog</a></li>
+    <li><a href="../../contact/" class="nav-cta">Book a Call &rarr;</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../../personal/">Personal Setup</a>
+  <a href="../../services/">Business Deployment</a>
+  <a href="../../pricing/">Pricing</a>
+  <a href="../../security/">Security</a>
+  <a href="../">Blog</a>
+  <a href="../../contact/">Book a Call &rarr;</a>
+</div>
+
+<main>
+<article>
+
+<section style="position:relative;padding:100px 0 48px;overflow:hidden;">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../">Home</a> &nbsp;/&nbsp; <a href="../">Blog</a> &nbsp;/&nbsp; Security Risks
+    </nav>
+    <div class="section-label" style="margin-top:24px;">Security</div>
+    <h1>OpenClaw Security Risks: What They Are <i>and How to Prevent Them</i></h1>
+    <div class="article-meta">
+      <span>Apr 12, 2026</span>
+      <span>&bull;</span>
+      <span>7 min read</span>
+      <span>&bull;</span>
+      <span class="tag tag-gold">Security</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:48px 0;">
+  <div class="container-sm">
+    <div class="snippet-box">
+      <p>The main security risk with OpenClaw is an exposed gateway — when the control port (default 18789) is accessible from the internet, anyone can potentially control your agent and access your connected accounts. Over 135,000 exposed installations were identified in 2026. Additional risks include malicious skills from third-party sources and unintended agent behaviour. All of these are preventable with proper configuration.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 48px;">
+  <div class="container-sm">
+    <div class="article-body">
+
+      <h2>The Exposed Gateway Problem</h2>
+      <p>This is the most critical security risk with OpenClaw, and it is alarmingly common. By default, OpenClaw's gateway API listens on port 18789 on all network interfaces. This means if your computer or server is connected to the internet without a firewall, anyone in the world can reach your agent's control interface.</p>
+      <p>What can an attacker do with access to an exposed gateway?</p>
+      <ul>
+        <li>Send messages as you through all connected messaging platforms</li>
+        <li>Read your entire email inbox and send emails from your account</li>
+        <li>Access, modify, or delete your files</li>
+        <li>Modify your calendar</li>
+        <li>Install malicious skills that run code on your machine</li>
+        <li>Use your AI API key (costing you money)</li>
+      </ul>
+      <p>This vulnerability was formally assigned <strong>CVE-2026-25253</strong> and is classified as critical. Security researchers identified over <strong>135,000 exposed installations</strong> in early 2026 — meaning 135,000 people had their personal AI agents wide open to the internet.</p>
+
+      <h3>The Fix</h3>
+      <p>Bind the gateway to localhost so it only accepts connections from the local machine:</p>
+      <ul>
+        <li>Set <code>OPENCLAW_HOST=127.0.0.1</code> in your configuration</li>
+        <li>Enable authentication tokens so even local connections require a secret</li>
+        <li>Configure your firewall to block port 18789 from external access</li>
+      </ul>
+      <p>These steps are part of every <a href="../../security/">security hardening</a> we perform at OpenClawGTA.</p>
+
+      <h2>Malicious Skills</h2>
+      <p>OpenClaw supports "skills" — third-party extensions that add capabilities to your agent. The community-run ClawHub marketplace lets anyone publish skills, and the vetting process is minimal.</p>
+      <p>Security audits found <strong>1,184 malicious packages</strong> on ClawHub in 2026 — roughly 1 in 12 published skills. These malicious skills can:</p>
+      <ul>
+        <li>Exfiltrate your data to external servers</li>
+        <li>Install backdoors on your machine</li>
+        <li>Modify your agent's behaviour without your knowledge</li>
+        <li>Steal your AI API keys</li>
+      </ul>
+
+      <h3>The Fix</h3>
+      <ul>
+        <li>Only install skills from verified publishers or the official OpenClaw organization</li>
+        <li>Review the source code of any skill before installing</li>
+        <li>Use the <code>--verified-only</code> flag when searching ClawHub</li>
+        <li>Regularly audit installed skills with <code>openclaw skills list</code></li>
+      </ul>
+
+      <h2>Unintended Agent Behaviour</h2>
+      <p>Even with a properly secured installation, the AI agent itself can make mistakes. There have been documented cases of agents taking unintended destructive actions — including one widely-reported incident where an agent permanently deleted a user's entire Gmail inbox while trying to "clean up" old messages.</p>
+      <p>The risk increases when:</p>
+      <ul>
+        <li>The agent has broad permissions without guardrails</li>
+        <li>Ambiguous instructions are given (e.g., "clean up my email" without specifying what that means)</li>
+        <li>No human-in-the-loop confirmation is configured for destructive actions</li>
+      </ul>
+
+      <h3>The Fix</h3>
+      <ul>
+        <li>Configure human-in-the-loop confirmation for all destructive actions (deleting, sending, modifying)</li>
+        <li>Start with read-only permissions and expand gradually</li>
+        <li>Be specific in your instructions — "archive emails older than 30 days in the Promotions tab" is safer than "clean up my email"</li>
+        <li>Test new workflows with low-stakes accounts before connecting production email</li>
+      </ul>
+
+      <h2>The Root Access Problem</h2>
+      <p>Some installation guides suggest running OpenClaw as root (the superuser account) for convenience. This is dangerous. If the agent — or an attacker who gains access to the gateway — can execute commands as root, they have unrestricted access to your entire system.</p>
+
+      <h3>The Fix</h3>
+      <ul>
+        <li>Never run OpenClaw as root</li>
+        <li>Create a dedicated user account with limited permissions for running the agent</li>
+        <li>Use the <code>openclaw doctor</code> command to verify your installation is not running with elevated privileges</li>
+      </ul>
+
+      <p>Security is not optional with OpenClaw — it's the difference between a powerful personal assistant and a wide-open backdoor to your digital life. If you're unsure about your setup, <a href="../../contact/">book a free security assessment</a> or read more about our <a href="../../security/">security hardening process</a>.</p>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="container-sm">
+    <div class="section-label">FAQ</div>
+    <h2 style="margin-bottom:36px;">Frequently Asked Questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How do I know if my OpenClaw installation is secure?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Run <code>openclaw doctor</code> from the terminal — it performs a security audit and flags common misconfigurations. Check that port 18789 is not accessible from outside your machine, that authentication tokens are enabled, and that the process is not running as root. If you're unsure, a professional security review can verify your setup.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Is OpenClaw safe for business use?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>OpenClaw can be safe for business use when properly configured with security hardening, authentication, firewall rules, and human-in-the-loop confirmations for sensitive actions. Without these measures, it poses significant risk to any connected business accounts.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What is CVE-2026-25253?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>CVE-2026-25253 is a critical vulnerability in OpenClaw's default configuration where the gateway API listens on all network interfaces (0.0.0.0) without authentication. This means anyone who can reach your server's IP address can send commands to your agent and access your connected accounts. The fix is to bind the gateway to localhost (127.0.0.1) and enable authentication.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Should I run OpenClaw on my main computer?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>It's safer to run OpenClaw on a dedicated machine or VPS separate from your primary computer. This limits the blast radius if something goes wrong — the agent only has access to what's on that machine, not your entire digital life. A Mac Mini or inexpensive VPS is ideal for this purpose.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Does OpenClawGTA handle security as part of setup?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Yes. Every OpenClawGTA installation includes full security hardening: binding the gateway to localhost, enabling authentication tokens, configuring firewall rules, setting up the process to run as a non-root user, and running the openclaw doctor audit. Security is not an add-on — it's built into every setup we perform.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Related Articles</div>
+    <h2 style="margin-bottom:24px;">Keep Reading</h2>
+    <div class="related-articles">
+      <a href="../openclaw-personal-setup-guide/" class="blog-card">
+        <span class="tag tag-green">Setup Guide</span>
+        <h3>How to Set Up OpenClaw: What's Involved and What to Expect</h3>
+        <p>The full setup process including security hardening, channel connection, and configuration.</p>
+      </a>
+      <a href="../what-is-openclaw/" class="blog-card">
+        <span class="tag tag-green">Understanding OpenClaw</span>
+        <h3>What Is OpenClaw? The Complete Answer for 2026</h3>
+        <p>Everything you need to know about what OpenClaw is and how it works.</p>
+      </a>
+      <a href="../openclaw-for-beginners/" class="blog-card">
+        <span class="tag tag-green">Understanding OpenClaw</span>
+        <h3>OpenClaw for Beginners: Everything You Need to Know</h3>
+        <p>The non-technical guide to getting started with OpenClaw safely.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Ready to get started?</h2>
+    <p style="max-width:520px;margin:16px auto 28px;">Book a free discovery call. We'll assess your workflow and recommend the right setup.</p>
+    <a href="../../contact/" class="btn-primary">Book a Call &rarr;</a>
+  </div>
+</div>
+
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="../../" class="nav-logo" style="margin-bottom:16px;"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+        <p style="font-size:13px;max-width:320px;margin-top:12px;">Professional OpenClaw installation, security hardening, and support for businesses across the GTA and Canada.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="../../personal/">Personal Setup</a></li><li><a href="../../services/">Business Deployment</a></li><li><a href="../../pricing/">Pricing</a></li><li><a href="../../security/">Security</a></li><li><a href="../">Blog</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul><li><a href="../../openclaw-setup-toronto/">Toronto</a></li><li><a href="../../openclaw-setup-vaughan/">Vaughan</a></li><li><a href="../../openclaw-setup-mississauga/">Mississauga</a></li><li><a href="../../openclaw-setup-brampton/">Brampton</a></li><li><a href="../../openclaw-setup-markham/">Markham</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 OpenClawGTA / Barrana.ai</span>
+      <span><a href="../../privacy/" style="color:var(--text-dim);text-decoration:none;">Privacy</a> &middot; <a href="../../terms/" style="color:var(--text-dim);text-decoration:none;">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../shared.js"></script>
+</body>
+</html>

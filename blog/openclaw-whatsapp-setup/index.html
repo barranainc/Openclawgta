@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw WhatsApp Setup | How to Connect — OpenClawGTA Canada</title>
+<meta name="description" content="How do you connect OpenClaw to WhatsApp? Step-by-step guide to linking your agent, configuring the connection, and using it from your phone.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Vaughan, Ontario, Canada">
+<link rel="canonical" href="https://openclawgta.com/blog/openclaw-whatsapp-setup/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OpenClawGTA">
+<meta property="og:title" content="OpenClaw WhatsApp Setup | How to Connect — OpenClawGTA Canada">
+<meta property="og:description" content="How do you connect OpenClaw to WhatsApp? Step-by-step guide to linking your agent, configuring the connection, and using it from your phone.">
+<meta property="og:url" content="https://openclawgta.com/blog/openclaw-whatsapp-setup/">
+<meta property="og:image" content="https://openclawgta.com/og-image.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw WhatsApp Setup | How to Connect — OpenClawGTA Canada">
+<meta name="twitter:description" content="How do you connect OpenClaw to WhatsApp? Step-by-step guide to linking your agent, configuring the connection, and using it from your phone.">
+<meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c8f04a'/><text x='16' y='23' text-anchor='middle' font-size='20' font-family='monospace' font-weight='bold' fill='%23000'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://openclawgta.com/"},
+  {"@type":"ListItem","position":2,"name":"Blog","item":"https://openclawgta.com/blog/"},
+  {"@type":"ListItem","position":3,"name":"OpenClaw WhatsApp Setup","item":"https://openclawgta.com/blog/openclaw-whatsapp-setup/"}
+]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"How to Connect OpenClaw to WhatsApp: The Complete Guide",
+  "description":"How do you connect OpenClaw to WhatsApp? Step-by-step guide to linking your agent, configuring the connection, and using it from your phone.",
+  "datePublished":"2026-04-12",
+  "dateModified":"2026-04-12",
+  "author":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com"},
+  "publisher":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com","logo":{"@type":"ImageObject","url":"https://openclawgta.com/og-image.jpg"}}
+}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Can I use WhatsApp Business with OpenClaw?","acceptedAnswer":{"@type":"Answer","text":"Yes, OpenClaw works with both regular WhatsApp and WhatsApp Business. WhatsApp Business is actually recommended for professional use because it allows you to set a business profile, auto-away messages, and quick replies that complement the agent's capabilities."}},
+  {"@type":"Question","name":"Can multiple people message the same OpenClaw agent on WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Yes. Anyone who has the agent's WhatsApp number can message it. The agent maintains separate conversation contexts for each person. You can configure access controls in the SOUL.md file to restrict who the agent responds to or what actions it takes based on who is messaging."}},
+  {"@type":"Question","name":"Will WhatsApp ban my number for using OpenClaw?","acceptedAnswer":{"@type":"Answer","text":"There is a risk. WhatsApp's terms of service prohibit unofficial API clients, and OpenClaw uses the Baileys library which is an unofficial implementation. WhatsApp bans do happen, though they are rare for personal-use agents with normal messaging volume. Using a dedicated number protects your primary account if a ban occurs."}},
+  {"@type":"Question","name":"Can I use iMessage instead of WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw does not have native iMessage support due to Apple's closed ecosystem. There are third-party bridge solutions that connect iMessage to OpenClaw, but they require additional setup and a Mac running at all times. WhatsApp and Telegram are the most reliable channels for OpenClaw."}}
+]}</script>
+</head>
+<body>
+
+<nav>
+  <a href="../../" class="nav-logo"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+  <ul class="nav-links">
+    <li><a href="../../personal/">Personal</a></li>
+    <li><a href="../../services/">Business</a></li>
+    <li><a href="../../pricing/">Pricing</a></li>
+    <li><a href="../../security/">Security</a></li>
+    <li><a href="../">Blog</a></li>
+    <li><a href="../../contact/" class="nav-cta">Book a Call &rarr;</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../../personal/">Personal Setup</a>
+  <a href="../../services/">Business Deployment</a>
+  <a href="../../pricing/">Pricing</a>
+  <a href="../../security/">Security</a>
+  <a href="../">Blog</a>
+  <a href="../../contact/">Book a Call &rarr;</a>
+</div>
+
+<main>
+<article>
+
+<section style="position:relative;padding:100px 0 48px;overflow:hidden;">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../">Home</a> &nbsp;/&nbsp; <a href="../">Blog</a> &nbsp;/&nbsp; WhatsApp Setup
+    </nav>
+    <div class="section-label" style="margin-top:24px;">Setup Guide</div>
+    <h1>How to Connect OpenClaw to WhatsApp: <i>The Complete Guide</i></h1>
+    <div class="article-meta">
+      <span>Apr 12, 2026</span>
+      <span>&bull;</span>
+      <span>6 min read</span>
+      <span>&bull;</span>
+      <span class="tag tag-green">Setup Guide</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:48px 0;">
+  <div class="container-sm">
+    <div class="snippet-box">
+      <p>To connect OpenClaw to WhatsApp: create a dedicated WhatsApp number for your agent (or use your existing number), run the OpenClaw onboarding process, select WhatsApp as your channel, scan the QR code that appears using WhatsApp's linked devices feature, and wait for the connection to confirm. The agent will then respond to messages sent to that number.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 48px;">
+  <div class="container-sm">
+    <div class="article-body">
+
+      <h2>Should You Use a New Number or Your Existing One?</h2>
+      <p>Before connecting, you need to decide which WhatsApp number your agent will use. Both options work, but they have different implications.</p>
+
+      <h3>Reasons to Use a Separate Number</h3>
+      <ul>
+        <li><strong>Ban protection</strong> — WhatsApp occasionally bans numbers using unofficial API clients. A separate number means your personal WhatsApp stays safe if this happens.</li>
+        <li><strong>Clean separation</strong> — your personal conversations stay on your personal number; agent interactions get their own space.</li>
+        <li><strong>Sharing</strong> — you can give the agent's number to colleagues or family members so they can interact with it too.</li>
+      </ul>
+
+      <h3>Getting a Canadian Number</h3>
+      <p>For a dedicated agent number in Canada, you can:</p>
+      <ul>
+        <li>Get a prepaid SIM card from any carrier (Koodo, Public Mobile, Lucky Mobile offer inexpensive plans)</li>
+        <li>Use a VoIP service that supports WhatsApp verification (some do, some don't — test before committing)</li>
+        <li>Use a dual-SIM phone to register a second WhatsApp account</li>
+      </ul>
+      <p>If you already understand <a href="../what-is-openclaw/">what OpenClaw is</a> and just want it working on WhatsApp, a prepaid SIM is the fastest path.</p>
+
+      <h2>The Connection Process</h2>
+      <p>Once you have OpenClaw installed (see our <a href="../openclaw-personal-setup-guide/">setup guide</a> for the full process), connecting WhatsApp involves four steps:</p>
+
+      <h3>Step 1: Start the OpenClaw Onboarding</h3>
+      <p>Run the onboarding wizard from the terminal. When it asks which messaging channel to connect, select WhatsApp. The wizard will prepare the WhatsApp bridge component.</p>
+
+      <h3>Step 2: Scan the QR Code</h3>
+      <p>A QR code appears in your terminal. Open WhatsApp on your phone, go to Settings > Linked Devices > Link a Device, and scan the QR code. This is the same process as linking WhatsApp Web — your agent appears as a linked device.</p>
+
+      <h3>Step 3: Wait for Confirmation</h3>
+      <p>The terminal will show a confirmation message once the connection is established. This usually takes 10-30 seconds. Your agent is now connected and listening for messages.</p>
+
+      <h3>Step 4: Send a Test Message</h3>
+      <p>Send a message to your agent's WhatsApp number from another phone (or from the same phone if using your own number — just message yourself). You should receive a response within a few seconds.</p>
+
+      <h2>What Happens When the Connection Drops</h2>
+      <p>OpenClaw uses the Baileys library to maintain its WhatsApp connection. This connection can drop for several reasons:</p>
+      <ul>
+        <li>The machine running OpenClaw restarts or loses internet</li>
+        <li>WhatsApp's servers have an outage</li>
+        <li>The linked device session expires (WhatsApp requires periodic re-authentication)</li>
+        <li>Too many linked devices are connected to the same number</li>
+      </ul>
+      <p>When the connection drops, OpenClaw will attempt to automatically reconnect. If automatic reconnection fails, you may need to scan the QR code again. The <code>openclaw reconnect whatsapp</code> command triggers a fresh connection attempt from the terminal.</p>
+
+      <h2>Using OpenClaw on WhatsApp Day-to-Day</h2>
+      <p>Once connected, you interact with your agent exactly like texting a person. There are no special commands or syntax — just natural language.</p>
+
+      <h3>Example Interactions</h3>
+      <ul>
+        <li>"Check my email for anything urgent" — the agent reads your inbox and summarizes important messages</li>
+        <li>"Draft a reply to the email from Sarah about the proposal" — the agent reads the thread and drafts a response</li>
+        <li>"What's on my calendar tomorrow?" — the agent checks your calendar and lists events</li>
+        <li>"Research the best restaurants in Vaughan for a client dinner" — the agent browses the web and sends you a summary</li>
+        <li>"Remind me to follow up with David on Thursday" — the agent sets a reminder and messages you on Thursday</li>
+      </ul>
+
+      <h3>Voice Notes</h3>
+      <p>OpenClaw can process WhatsApp voice notes. Send a voice memo and the agent will transcribe it and act on the content. This is particularly useful for capturing tasks while driving or when you can't type — a feature that makes OpenClaw popular with <a href="../openclaw-for-real-estate-agents/">real estate agents</a> and other professionals who are frequently on the move.</p>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="container-sm">
+    <div class="section-label">FAQ</div>
+    <h2 style="margin-bottom:36px;">Frequently Asked Questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Can I use WhatsApp Business with OpenClaw?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Yes, OpenClaw works with both regular WhatsApp and WhatsApp Business. WhatsApp Business is actually recommended for professional use because it allows you to set a business profile, auto-away messages, and quick replies that complement the agent's capabilities.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Can multiple people message the same OpenClaw agent on WhatsApp?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Yes. Anyone who has the agent's WhatsApp number can message it. The agent maintains separate conversation contexts for each person. You can configure access controls in the SOUL.md file to restrict who the agent responds to or what actions it takes based on who is messaging.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Will WhatsApp ban my number for using OpenClaw?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>There is a risk. WhatsApp's terms of service prohibit unofficial API clients, and OpenClaw uses the Baileys library which is an unofficial implementation. WhatsApp bans do happen, though they are rare for personal-use agents with normal messaging volume. Using a dedicated number protects your primary account if a ban occurs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Can I use iMessage instead of WhatsApp?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>OpenClaw does not have native iMessage support due to Apple's closed ecosystem. There are third-party bridge solutions that connect iMessage to OpenClaw, but they require additional setup and a Mac running at all times. WhatsApp and Telegram are the most reliable channels for OpenClaw.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Related Articles</div>
+    <h2 style="margin-bottom:24px;">Keep Reading</h2>
+    <div class="related-articles">
+      <a href="../openclaw-personal-setup-guide/" class="blog-card">
+        <span class="tag tag-green">Setup Guide</span>
+        <h3>How to Set Up OpenClaw: What's Involved and What to Expect</h3>
+        <p>The full setup process from hardware selection to workflow configuration.</p>
+      </a>
+      <a href="../openclaw-for-beginners/" class="blog-card">
+        <span class="tag tag-green">Understanding OpenClaw</span>
+        <h3>OpenClaw for Beginners: Everything You Need to Know</h3>
+        <p>New to OpenClaw? Start here for the complete non-technical overview.</p>
+      </a>
+      <a href="../openclaw-security-risks/" class="blog-card">
+        <span class="tag tag-gold">Security</span>
+        <h3>OpenClaw Security Risks: What They Are and How to Prevent Them</h3>
+        <p>Make sure your installation is secure before connecting your WhatsApp.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Ready to get started?</h2>
+    <p style="max-width:520px;margin:16px auto 28px;">Book a free discovery call. We'll assess your workflow and recommend the right setup.</p>
+    <a href="../../contact/" class="btn-primary">Book a Call &rarr;</a>
+  </div>
+</div>
+
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="../../" class="nav-logo" style="margin-bottom:16px;"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+        <p style="font-size:13px;max-width:320px;margin-top:12px;">Professional OpenClaw installation, security hardening, and support for businesses across the GTA and Canada.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="../../personal/">Personal Setup</a></li><li><a href="../../services/">Business Deployment</a></li><li><a href="../../pricing/">Pricing</a></li><li><a href="../../security/">Security</a></li><li><a href="../">Blog</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul><li><a href="../../openclaw-setup-toronto/">Toronto</a></li><li><a href="../../openclaw-setup-vaughan/">Vaughan</a></li><li><a href="../../openclaw-setup-mississauga/">Mississauga</a></li><li><a href="../../openclaw-setup-brampton/">Brampton</a></li><li><a href="../../openclaw-setup-markham/">Markham</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 OpenClawGTA / Barrana.ai</span>
+      <span><a href="../../privacy/" style="color:var(--text-dim);text-decoration:none;">Privacy</a> &middot; <a href="../../terms/" style="color:var(--text-dim);text-decoration:none;">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../shared.js"></script>
+</body>
+</html>

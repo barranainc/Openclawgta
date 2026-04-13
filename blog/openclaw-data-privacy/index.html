@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw Data Privacy | Is Your Data Safe? — OpenClawGTA Canada</title>
+<meta name="description" content="OpenClaw is self-hosted — your data doesn't go to any third party. Here's exactly what data privacy looks like with OpenClaw vs. SaaS AI tools.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Vaughan, Ontario, Canada">
+<link rel="canonical" href="https://openclawgta.com/blog/openclaw-data-privacy/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OpenClawGTA">
+<meta property="og:title" content="OpenClaw Data Privacy | Is Your Data Safe? — OpenClawGTA Canada">
+<meta property="og:description" content="OpenClaw is self-hosted — your data doesn't go to any third party. Here's exactly what data privacy looks like with OpenClaw vs. SaaS AI tools.">
+<meta property="og:url" content="https://openclawgta.com/blog/openclaw-data-privacy/">
+<meta property="og:image" content="https://openclawgta.com/og-image.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw Data Privacy | Is Your Data Safe? — OpenClawGTA Canada">
+<meta name="twitter:description" content="OpenClaw is self-hosted — your data doesn't go to any third party. Here's exactly what data privacy looks like with OpenClaw vs. SaaS AI tools.">
+<meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c8f04a'/><text x='16' y='23' text-anchor='middle' font-size='20' font-family='monospace' font-weight='bold' fill='%23000'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://openclawgta.com/"},
+  {"@type":"ListItem","position":2,"name":"Blog","item":"https://openclawgta.com/blog/"},
+  {"@type":"ListItem","position":3,"name":"OpenClaw Data Privacy","item":"https://openclawgta.com/blog/openclaw-data-privacy/"}
+]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"OpenClaw and Data Privacy: Who Sees Your Data?",
+  "description":"OpenClaw is self-hosted — your data doesn't go to any third party. Here's exactly what data privacy looks like with OpenClaw vs. SaaS AI tools.",
+  "datePublished":"2026-04-12",
+  "dateModified":"2026-04-12",
+  "author":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com"},
+  "publisher":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com","logo":{"@type":"ImageObject","url":"https://openclawgta.com/og-image.jpg"}}
+}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Does OpenClawGTA have access to my data after setup?","acceptedAnswer":{"@type":"Answer","text":"No. After setup is complete, OpenClawGTA does not have access to your data unless you explicitly grant remote access for support purposes. The agent runs entirely on your hardware with your credentials. We do not maintain backdoor access, we do not receive copies of your messages, and we do not monitor your agent's activity. If you need support, you grant us temporary access which you can revoke at any time."}},
+  {"@type":"Question","name":"Does the AI model provider see my emails and messages?","acceptedAnswer":{"@type":"Answer","text":"When you use a cloud AI model like Claude or GPT-4, the text of your messages is sent to the model provider's API for processing. This means Anthropic or OpenAI sees the content of the specific messages being processed. However, both providers offer API data policies that are significantly more protective than their consumer products — API data is typically not used for training, is not stored long-term, and is covered by enterprise-grade privacy agreements. For maximum privacy, you can use a local model that runs entirely on your hardware."}},
+  {"@type":"Question","name":"Is OpenClaw compliant with PIPEDA?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw's self-hosted architecture supports PIPEDA compliance because you maintain full control over personal information. The data stays on your hardware, you control who accesses it, and you can delete it at any time. However, PIPEDA compliance also depends on how you use the tool — you need appropriate consent mechanisms, data retention policies, and breach notification procedures. We configure these controls during professional setup and document the privacy measures for your records."}},
+  {"@type":"Question","name":"What about CASL compliance for automated emails?","acceptedAnswer":{"@type":"Answer","text":"Canada's Anti-Spam Legislation (CASL) applies to any commercial electronic messages, including those sent by OpenClaw on your behalf. You are responsible for ensuring that recipients have given consent (express or implied) before OpenClaw sends them emails. During setup, we configure the agent to respect your consent lists and include required identification and unsubscribe mechanisms in automated emails. The agent does not send unsolicited commercial messages unless you explicitly configure it to — and we strongly advise against that."}}
+]}</script>
+</head>
+<body>
+
+<nav>
+  <a href="../../" class="nav-logo"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+  <ul class="nav-links">
+    <li><a href="../../personal/">Personal</a></li>
+    <li><a href="../../services/">Business</a></li>
+    <li><a href="../../pricing/">Pricing</a></li>
+    <li><a href="../../security/">Security</a></li>
+    <li><a href="../">Blog</a></li>
+    <li><a href="../../contact/" class="nav-cta">Book a Call &rarr;</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../../personal/">Personal Setup</a>
+  <a href="../../services/">Business Deployment</a>
+  <a href="../../pricing/">Pricing</a>
+  <a href="../../security/">Security</a>
+  <a href="../">Blog</a>
+  <a href="../../contact/">Book a Call &rarr;</a>
+</div>
+
+<main>
+<article>
+
+<section style="position:relative;padding:100px 0 48px;overflow:hidden;">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../">Home</a> &nbsp;/&nbsp; <a href="../">Blog</a> &nbsp;/&nbsp; Data Privacy
+    </nav>
+    <div class="section-label" style="margin-top:24px;">Security</div>
+    <h1>OpenClaw and Data Privacy: <i>Who Sees Your Data?</i></h1>
+    <div class="article-meta">
+      <span>Apr 12, 2026</span>
+      <span>&bull;</span>
+      <span>6 min read</span>
+      <span>&bull;</span>
+      <span class="tag tag-gold">Security</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:48px 0;">
+  <div class="container-sm">
+    <div class="snippet-box">
+      <p>With a self-hosted OpenClaw installation, your data stays entirely on your hardware. Your emails, files, calendar entries, and conversations with the agent never pass through OpenClawGTA or any third-party platform. The only data that leaves your infrastructure is what you've explicitly connected &mdash; e.g., the text of your messages sent to the AI model's API (Claude or GPT). The AI provider's privacy policy covers that data.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 48px;">
+  <div class="container-sm">
+    <div class="article-body">
+
+      <h2>Self-Hosted Architecture: What It Means for Privacy</h2>
+      <p>Unlike SaaS AI tools (ChatGPT, Notion AI, Microsoft Copilot), OpenClaw runs on hardware you own or control. This is a fundamental architectural difference that changes the privacy equation entirely.</p>
+      <p>With a SaaS tool, your data is:</p>
+      <ul>
+        <li>Stored on the provider's servers</li>
+        <li>Governed by their privacy policy (which can change)</li>
+        <li>Potentially used for model training (unless you opt out)</li>
+        <li>Accessible to the provider's employees and systems</li>
+        <li>Subject to the provider's jurisdiction and legal obligations</li>
+      </ul>
+      <p>With self-hosted OpenClaw, your data is:</p>
+      <ul>
+        <li>Stored on your machine (Mac Mini, VPS, or existing computer)</li>
+        <li>Governed by your own data handling practices</li>
+        <li>Never used for model training</li>
+        <li>Accessible only to people you authorize</li>
+        <li>Subject to Canadian law and your own compliance requirements</li>
+      </ul>
+      <p>This self-hosted model is why OpenClaw is suitable for industries with strict privacy requirements &mdash; <a href="../openclaw-for-lawyers/">legal practices</a>, <a href="../openclaw-for-healthcare-professionals/">healthcare professionals</a>, financial services, and any business handling sensitive client information.</p>
+
+      <h2>What Data Goes Where</h2>
+      <p>Here's a precise breakdown of what data stays local and what leaves your machine:</p>
+
+      <h3>Stays on Your Hardware (Never Leaves)</h3>
+      <ul>
+        <li>Your email archive and inbox contents</li>
+        <li>Your calendar data</li>
+        <li>Your local files and documents</li>
+        <li>Your conversation history with the agent</li>
+        <li>Your SOUL.md configuration and agent settings</li>
+        <li>Your contact lists and CRM data</li>
+        <li>Your task lists and project information</li>
+      </ul>
+
+      <h3>Sent to AI Model Provider (Anthropic/OpenAI)</h3>
+      <ul>
+        <li>The text content of messages you exchange with the agent</li>
+        <li>Context the agent includes in its prompts (email text being summarized, document content being analyzed)</li>
+        <li>Tool call descriptions and results</li>
+      </ul>
+
+      <h3>What the AI Provider Does with This Data</h3>
+      <p>Both Anthropic and OpenAI have specific API data policies. API usage is treated differently from consumer product usage. Generally, API data is not used for model training, is not stored beyond a short retention period for abuse monitoring, and is covered by enterprise-grade data processing agreements. However, you should review the current policies of whichever provider you choose, as these can change.</p>
+
+      <h2>PIPEDA Compliance</h2>
+      <p>For Canadian businesses, the Personal Information Protection and Electronic Documents Act (PIPEDA) governs how you collect, use, and disclose personal information. OpenClaw's self-hosted architecture supports PIPEDA compliance in several ways:</p>
+      <ul>
+        <li><strong>Data sovereignty</strong> &mdash; personal information stays on your Canadian hardware</li>
+        <li><strong>Access control</strong> &mdash; you determine who can access the data</li>
+        <li><strong>Data minimization</strong> &mdash; you configure exactly what the agent can access</li>
+        <li><strong>Deletion capability</strong> &mdash; you can delete any data at any time from your own system</li>
+        <li><strong>Accountability</strong> &mdash; you maintain clear records of what the agent does with personal information</li>
+      </ul>
+      <p>During professional setup, we configure audit logging so you have a record of what data the agent accesses and what actions it takes. This documentation supports your PIPEDA compliance obligations. For a complete overview of our security practices, see our <a href="../../security/">security page</a>.</p>
+
+      <h2>The Local Model Option</h2>
+      <p>For maximum privacy, you can run OpenClaw with a local AI model instead of a cloud API. Models like Llama run entirely on your hardware, meaning zero data leaves your machine &mdash; not even message text. The trade-off is that local models require more powerful hardware (a good GPU) and the quality of responses is generally lower than Claude or GPT-4.</p>
+      <p>For most users, the cloud API with its privacy protections is sufficient. But for businesses handling extremely sensitive data &mdash; legal privileged communications, health records, financial information &mdash; the local model option provides an additional layer of privacy protection.</p>
+
+      <h2>CASL Compliance for Automated Emails</h2>
+      <p>Canada's Anti-Spam Legislation (CASL) is one of the strictest anti-spam laws in the world, and it applies to any commercial electronic message &mdash; including those sent by your OpenClaw agent. Key requirements:</p>
+      <ul>
+        <li><strong>Consent</strong> &mdash; you must have express or implied consent before sending commercial emails</li>
+        <li><strong>Identification</strong> &mdash; emails must identify you and your business</li>
+        <li><strong>Unsubscribe mechanism</strong> &mdash; every commercial email must include a way to opt out</li>
+      </ul>
+      <p>During setup, we configure OpenClaw to respect these requirements. The agent maintains a consent list and only sends automated emails to recipients who have given appropriate consent. Unsubscribe mechanisms and identification blocks are included automatically in commercial messages. We strongly advise against configuring OpenClaw to send unsolicited commercial email &mdash; the penalties under CASL can reach $10 million per violation for businesses.</p>
+
+      <h3>Questions About Your Specific Situation</h3>
+      <p>Data privacy requirements vary by industry and use case. If you have specific concerns about how OpenClaw would handle your data, visit our <a href="../../security/">security page</a> for detailed information or review our <a href="../../privacy/">privacy policy</a>. For a personalized assessment, <a href="../../contact/">book a discovery call</a> and we'll walk through the privacy implications for your specific setup.</p>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="container-sm">
+    <div class="section-label">FAQ</div>
+    <h2 style="margin-bottom:36px;">Frequently Asked Questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Does OpenClawGTA have access to my data after setup?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>No. After setup is complete, OpenClawGTA does not have access to your data unless you explicitly grant remote access for support purposes. The agent runs entirely on your hardware with your credentials. We do not maintain backdoor access, we do not receive copies of your messages, and we do not monitor your agent's activity. If you need support, you grant us temporary access which you can revoke at any time.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Does the AI model provider see my emails and messages?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>When you use a cloud AI model like Claude or GPT-4, the text of your messages is sent to the model provider's API for processing. This means Anthropic or OpenAI sees the content of the specific messages being processed. However, both providers offer API data policies that are significantly more protective than their consumer products &mdash; API data is typically not used for training, is not stored long-term, and is covered by enterprise-grade privacy agreements. For maximum privacy, you can use a local model that runs entirely on your hardware.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Is OpenClaw compliant with PIPEDA?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>OpenClaw's self-hosted architecture supports PIPEDA compliance because you maintain full control over personal information. The data stays on your hardware, you control who accesses it, and you can delete it at any time. However, PIPEDA compliance also depends on how you use the tool &mdash; you need appropriate consent mechanisms, data retention policies, and breach notification procedures. We configure these controls during professional setup and document the privacy measures for your records.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What about CASL compliance for automated emails?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Canada's Anti-Spam Legislation (CASL) applies to any commercial electronic messages, including those sent by OpenClaw on your behalf. You are responsible for ensuring that recipients have given consent (express or implied) before OpenClaw sends them emails. During setup, we configure the agent to respect your consent lists and include required identification and unsubscribe mechanisms in automated emails. The agent does not send unsolicited commercial messages unless you explicitly configure it to &mdash; and we strongly advise against that.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Related Articles</div>
+    <h2 style="margin-bottom:24px;">Keep Reading</h2>
+    <div class="related-articles">
+      <a href="../openclaw-security-risks/" class="blog-card">
+        <span class="tag tag-gold">Security</span>
+        <h3>OpenClaw Security Risks: What They Are and How to Prevent Them</h3>
+        <p>OpenClaw has real security risks if misconfigured. Here's what the risks are and how professional setup prevents them.</p>
+      </a>
+      <a href="../openclaw-for-lawyers/" class="blog-card">
+        <span class="tag tag-gold">Industry</span>
+        <h3>Can Lawyers Use OpenClaw?</h3>
+        <p>A practical assessment of what tasks it handles well, what risks to avoid, and how to configure it for legal work.</p>
+      </a>
+      <a href="../openclaw-for-healthcare-professionals/" class="blog-card">
+        <span class="tag tag-gold">Industry</span>
+        <h3>OpenClaw for Healthcare Professionals</h3>
+        <p>Administrative automation with privacy guardrails &mdash; PHIPA-aligned setup for clinics and practices.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Ready to get started?</h2>
+    <p style="max-width:520px;margin:16px auto 28px;">Book a free discovery call. We'll assess your workflow and recommend the right setup.</p>
+    <a href="../../contact/" class="btn-primary">Book a Call &rarr;</a>
+  </div>
+</div>
+
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="../../" class="nav-logo" style="margin-bottom:16px;"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+        <p style="font-size:13px;max-width:320px;margin-top:12px;">Professional OpenClaw installation, security hardening, and support for businesses across the GTA and Canada.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="../../personal/">Personal Setup</a></li><li><a href="../../services/">Business Deployment</a></li><li><a href="../../pricing/">Pricing</a></li><li><a href="../../security/">Security</a></li><li><a href="../">Blog</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul><li><a href="../../openclaw-setup-toronto/">Toronto</a></li><li><a href="../../openclaw-setup-vaughan/">Vaughan</a></li><li><a href="../../openclaw-setup-mississauga/">Mississauga</a></li><li><a href="../../openclaw-setup-brampton/">Brampton</a></li><li><a href="../../openclaw-setup-markham/">Markham</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 OpenClawGTA / Barrana.ai</span>
+      <span><a href="../../privacy/" style="color:var(--text-dim);text-decoration:none;">Privacy</a> &middot; <a href="../../terms/" style="color:var(--text-dim);text-decoration:none;">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../shared.js"></script>
+</body>
+</html>

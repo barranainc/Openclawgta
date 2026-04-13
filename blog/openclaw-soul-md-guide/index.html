@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw SOUL.md Guide | Configure Your Agent — OpenClawGTA Canada</title>
+<meta name="description" content="SOUL.md is the file that defines how your OpenClaw agent thinks and behaves. Here's what to put in it and how we configure it for business use.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Vaughan, Ontario, Canada">
+<link rel="canonical" href="https://openclawgta.com/blog/openclaw-soul-md-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OpenClawGTA">
+<meta property="og:title" content="OpenClaw SOUL.md Guide | Configure Your Agent — OpenClawGTA Canada">
+<meta property="og:description" content="SOUL.md is the file that defines how your OpenClaw agent thinks and behaves. Here's what to put in it and how we configure it for business use.">
+<meta property="og:url" content="https://openclawgta.com/blog/openclaw-soul-md-guide/">
+<meta property="og:image" content="https://openclawgta.com/og-image.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw SOUL.md Guide | Configure Your Agent — OpenClawGTA Canada">
+<meta name="twitter:description" content="SOUL.md is the file that defines how your OpenClaw agent thinks and behaves. Here's what to put in it and how we configure it for business use.">
+<meta name="twitter:image" content="https://openclawgta.com/og-image.jpg">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c8f04a'/><text x='16' y='23' text-anchor='middle' font-size='20' font-family='monospace' font-weight='bold' fill='%23000'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://openclawgta.com/"},
+  {"@type":"ListItem","position":2,"name":"Blog","item":"https://openclawgta.com/blog/"},
+  {"@type":"ListItem","position":3,"name":"What Is SOUL.md?","item":"https://openclawgta.com/blog/openclaw-soul-md-guide/"}
+]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+  "headline":"What Is SOUL.md? How to Configure Your OpenClaw Agent's Personality",
+  "description":"SOUL.md is the file that defines how your OpenClaw agent thinks and behaves. Here's what to put in it and how we configure it for business use.",
+  "datePublished":"2026-04-12",
+  "dateModified":"2026-04-12",
+  "author":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com"},
+  "publisher":{"@type":"Organization","name":"OpenClawGTA","url":"https://openclawgta.com","logo":{"@type":"ImageObject","url":"https://openclawgta.com/og-image.jpg"}}
+}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What goes in a SOUL.md file?","acceptedAnswer":{"@type":"Answer","text":"A SOUL.md file contains your name and context, the agent's communication style and tone, rules about what it can do without asking and what always requires approval, information about your contacts and relationships, scheduled task configurations, writing examples that demonstrate your preferred style, and specific instructions for handling common situations."}},
+  {"@type":"Question","name":"How long does it take to set up a SOUL.md?","acceptedAnswer":{"@type":"Answer","text":"A basic SOUL.md takes about 30-60 minutes to write from scratch. A comprehensive business SOUL.md that covers all scenarios, contacts, and edge cases can take 2-4 hours of initial setup plus ongoing iteration. When OpenClawGTA configures your SOUL.md, we spend 1-2 hours in the discovery session gathering information, then build the file and refine it over the first two weeks of use."}},
+  {"@type":"Question","name":"What happens if SOUL.md is not configured properly?","acceptedAnswer":{"@type":"Answer","text":"Without a properly configured SOUL.md, the agent defaults to generic behavior — it won't know your name, your business context, your communication preferences, or your rules about when to act versus when to ask. This leads to responses that feel impersonal, decisions that don't match your judgment, and frequent situations where the agent does something you wouldn't have done."}},
+  {"@type":"Question","name":"Can I edit my SOUL.md after setup?","acceptedAnswer":{"@type":"Answer","text":"Yes, and you should. SOUL.md is a living document that improves over time. When the agent does something you wouldn't have done, that's a signal to add a rule or clarification to the file. Most users make weekly adjustments during the first month, then monthly adjustments after that as they discover new edge cases and preferences."}}
+]}</script>
+</head>
+<body>
+
+<nav>
+  <a href="../../" class="nav-logo"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+  <ul class="nav-links">
+    <li><a href="../../personal/">Personal</a></li>
+    <li><a href="../../services/">Business</a></li>
+    <li><a href="../../pricing/">Pricing</a></li>
+    <li><a href="../../security/">Security</a></li>
+    <li><a href="../">Blog</a></li>
+    <li><a href="../../contact/" class="nav-cta">Book a Call &rarr;</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../../personal/">Personal Setup</a>
+  <a href="../../services/">Business Deployment</a>
+  <a href="../../pricing/">Pricing</a>
+  <a href="../../security/">Security</a>
+  <a href="../">Blog</a>
+  <a href="../../contact/">Book a Call &rarr;</a>
+</div>
+
+<main>
+<article>
+
+<section style="position:relative;padding:100px 0 48px;overflow:hidden;">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../">Home</a> &nbsp;/&nbsp; <a href="../">Blog</a> &nbsp;/&nbsp; SOUL.md Guide
+    </nav>
+    <div class="section-label" style="margin-top:24px;">Setup Guide</div>
+    <h1>What Is SOUL.md? <i>How to Configure Your OpenClaw Agent's Personality</i></h1>
+    <div class="article-meta">
+      <span>Apr 12, 2026</span>
+      <span>&bull;</span>
+      <span>6 min read</span>
+      <span>&bull;</span>
+      <span class="tag tag-green">Setup Guide</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding:48px 0;">
+  <div class="container-sm">
+    <div class="snippet-box">
+      <p>SOUL.md is a configuration file that defines your OpenClaw agent's personality, instructions, and rules. It works like a detailed job description for your AI employee — specifying your name and context, how the agent should communicate, what it's allowed to do without asking, what always requires approval, and how it should handle specific situations. The more detailed the SOUL.md, the better the agent performs.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 48px;">
+  <div class="container-sm">
+    <div class="article-body">
+
+      <h2>What SOUL.md Is</h2>
+      <p>SOUL.md is a plain text file written in Markdown that lives in your OpenClaw configuration directory. Every time the agent processes a message, it reads this file to understand who you are, how you want it to behave, and what rules to follow.</p>
+      <p>Think of it as the difference between hiring a stranger off the street and hiring someone who has been briefed on your business, your clients, your preferences, and your expectations. The SOUL.md is that briefing document.</p>
+      <p>Without it, the agent uses generic defaults. With a well-crafted one, the agent feels like it knows you.</p>
+
+      <h2>What Goes in SOUL.md</h2>
+      <p>A comprehensive SOUL.md covers six areas:</p>
+      <ul>
+        <li><strong>Context</strong> — Your name, your business, your role, the industry you work in, and any background the agent needs to understand your world. Example: "I run a renovation contracting company in Vaughan, Ontario. We do kitchen and bathroom renovations for residential clients."</li>
+        <li><strong>Communication style</strong> — How the agent should write and speak. Formal or casual? Short or detailed? Does it use your name in responses? Should it match the tone of the person messaging? Example: "Write in a professional but friendly tone. Keep messages under 3 paragraphs unless more detail is needed."</li>
+        <li><strong>Rules and permissions</strong> — What the agent can do autonomously and what requires your approval. This is the most important section. Example: "You can send appointment confirmations and follow-up emails without asking. You must always ask before sending anything that includes pricing or committing to a timeline."</li>
+        <li><strong>Scheduled tasks</strong> — Recurring tasks the agent should perform on a schedule. Example: "Every weekday at 7 AM, send me a morning briefing with today's appointments, unread priority emails, and any tasks due today."</li>
+        <li><strong>Contacts</strong> — Key people the agent should know about. Example: "Sarah is my business partner. Always CC her on client-facing emails. Mark is my accountant — forward anything tax-related to him."</li>
+        <li><strong>Writing examples</strong> — Sample messages that demonstrate how you actually write so the agent can match your voice. Include 3-5 examples of emails or messages you have sent that represent your typical style.</li>
+      </ul>
+
+      <h2>How We Configure SOUL.md</h2>
+      <p>When OpenClawGTA sets up your agent, the SOUL.md configuration happens during our <a href="../../process/">onboarding process</a>. Here is how it works:</p>
+      <ol>
+        <li><strong>Discovery interview</strong> — We spend 30-60 minutes asking you about your business, workflow, communication preferences, and what you want the agent to handle. We take detailed notes.</li>
+        <li><strong>Draft configuration</strong> — We write the initial SOUL.md based on the interview, incorporating your specific context, rules, and communication style.</li>
+        <li><strong>Testing phase</strong> — During the first week, you use the agent and note anything that feels off — responses that don't sound like you, decisions you would have made differently, situations the agent didn't handle well.</li>
+        <li><strong>Iteration</strong> — We refine the SOUL.md based on your feedback, adding rules and clarifications until the agent consistently matches your expectations.</li>
+      </ol>
+
+      <h2>Common Mistakes</h2>
+      <p>The most common SOUL.md mistakes we see from DIY setups:</p>
+      <ul>
+        <li><strong>Too vague</strong> — "Be helpful and professional" tells the agent nothing useful. Specific instructions like "Never use exclamation marks in client emails" are far more effective.</li>
+        <li><strong>Missing permission boundaries</strong> — Not defining what requires approval leads to the agent either doing too much without asking or asking about everything. Be explicit about the boundary.</li>
+        <li><strong>No writing examples</strong> — Without examples of your actual writing style, the agent defaults to a generic AI tone that clients will immediately notice.</li>
+        <li><strong>Set-and-forget</strong> — SOUL.md needs ongoing refinement. The first version is never the final version.</li>
+      </ul>
+
+      <h2>The Iteration Process</h2>
+      <p>The best SOUL.md files are not written in one sitting. They evolve over weeks as you discover edge cases and preferences you did not think to specify upfront.</p>
+      <p>When the agent does something you would not have done, that is a signal to add a rule. When it asks about something you think it should handle on its own, that is a signal to expand its permissions. When a client comments that a message does not sound like you, that is a signal to refine the communication style section.</p>
+      <p>Most OpenClawGTA clients make weekly adjustments during the first month, then monthly adjustments after that. Over time, the SOUL.md becomes a comprehensive operating manual that makes the agent genuinely useful.</p>
+      <p>Ready to get your agent configured properly? <a href="../../contact/">Book a free discovery call</a> and we will start building your SOUL.md together.</p>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="container-sm">
+    <div class="section-label">FAQ</div>
+    <h2 style="margin-bottom:36px;">Frequently Asked Questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What goes in a SOUL.md file?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>A SOUL.md file contains your name and context, the agent's communication style and tone, rules about what it can do without asking and what always requires approval, information about your contacts and relationships, scheduled task configurations, writing examples that demonstrate your preferred style, and specific instructions for handling common situations.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How long does it take to set up a SOUL.md?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>A basic SOUL.md takes about 30-60 minutes to write from scratch. A comprehensive business SOUL.md that covers all scenarios, contacts, and edge cases can take 2-4 hours of initial setup plus ongoing iteration. When OpenClawGTA configures your SOUL.md, we spend 1-2 hours in the discovery session gathering information, then build the file and refine it over the first two weeks of use.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What happens if SOUL.md is not configured properly?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Without a properly configured SOUL.md, the agent defaults to generic behavior — it won't know your name, your business context, your communication preferences, or your rules about when to act versus when to ask. This leads to responses that feel impersonal, decisions that don't match your judgment, and frequent situations where the agent does something you wouldn't have done.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Can I edit my SOUL.md after setup?<div class="faq-icon">+</div></button>
+        <div class="faq-answer"><p>Yes, and you should. SOUL.md is a living document that improves over time. When the agent does something you wouldn't have done, that's a signal to add a rule or clarification to the file. Most users make weekly adjustments during the first month, then monthly adjustments after that as they discover new edge cases and preferences.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Related Articles</div>
+    <h2 style="margin-bottom:24px;">Keep Reading</h2>
+    <div class="related-articles">
+      <a href="../openclaw-personal-setup-guide/" class="blog-card">
+        <span class="tag tag-green">Setup Guide</span>
+        <h3>OpenClaw Personal Setup Guide</h3>
+        <p>Step-by-step guide to setting up OpenClaw for personal use — what you need, what to expect, and how long it takes.</p>
+      </a>
+      <a href="../openclaw-email-management/" class="blog-card">
+        <span class="tag tag-green">Setup Guide</span>
+        <h3>OpenClaw Email Management: Inbox Zero on Autopilot</h3>
+        <p>How to configure OpenClaw to triage, draft, and manage your email inbox automatically.</p>
+      </a>
+      <a href="../openclaw-gta-why-professional-setup/" class="blog-card">
+        <span class="tag tag-green">Setup Guide</span>
+        <h3>Why Professional Setup Matters for OpenClaw</h3>
+        <p>The difference between a DIY OpenClaw install and a professional deployment — and why it matters for security.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Ready to get started?</h2>
+    <p style="max-width:520px;margin:16px auto 28px;">Book a free discovery call. We'll assess your workflow and recommend the right setup.</p>
+    <a href="../../contact/" class="btn-primary">Book a Call &rarr;</a>
+  </div>
+</div>
+
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="../../" class="nav-logo" style="margin-bottom:16px;"><div class="nav-logo-mark">C</div><span>OpenClawGTA</span></a>
+        <p style="font-size:13px;max-width:320px;margin-top:12px;">Professional OpenClaw installation, security hardening, and support for businesses across the GTA and Canada.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="../../personal/">Personal Setup</a></li><li><a href="../../services/">Business Deployment</a></li><li><a href="../../pricing/">Pricing</a></li><li><a href="../../security/">Security</a></li><li><a href="../">Blog</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul><li><a href="../../openclaw-setup-toronto/">Toronto</a></li><li><a href="../../openclaw-setup-vaughan/">Vaughan</a></li><li><a href="../../openclaw-setup-mississauga/">Mississauga</a></li><li><a href="../../openclaw-setup-brampton/">Brampton</a></li><li><a href="../../openclaw-setup-markham/">Markham</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 OpenClawGTA / Barrana.ai</span>
+      <span><a href="../../privacy/" style="color:var(--text-dim);text-decoration:none;">Privacy</a> &middot; <a href="../../terms/" style="color:var(--text-dim);text-decoration:none;">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../shared.js"></script>
+</body>
+</html>

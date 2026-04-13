@@ -6,6 +6,24 @@ Disallow: /admin
 
 Sitemap: https://openclawgta.com/sitemap.xml
 
+# AI Crawlers
+User-agent: GPTBot
+Allow: /blog/
+Crawl-delay: 5
+
+User-agent: ChatGPT-User
+Allow: /blog/
+
+User-agent: Google-Extended
+Allow: /blog/
+
+User-agent: PerplexityBot
+Allow: /blog/
+Crawl-delay: 5
+
+User-agent: ClaudeBot
+Allow: /blog/
+
 # Crawl-delay for aggressive bots
 User-agent: AhrefsBot
 Crawl-delay: 10
